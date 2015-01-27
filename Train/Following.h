@@ -2,12 +2,12 @@
 //  Following.h
 //  Train
 //
-//  Created by Neegbeah Reeves on 1/13/15.
+//  Created by Neegbeah Reeves on 1/27/15.
 //
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface Following : PFQueryTableViewController
+@interface Following : NSObject
 
 @end
