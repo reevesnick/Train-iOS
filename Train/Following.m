@@ -10,4 +10,9 @@
 
 @implementation Following
 
+@synthesize username;
+@synthesize description;
+@synthesize videoFile;
+@synthesize date;
+
 @end

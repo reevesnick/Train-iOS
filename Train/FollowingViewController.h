@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 
-@interface FollowingViewController : PFQueryTableViewController
+@interface FollowingViewController : PFQueryTableViewController 
 
 @end
