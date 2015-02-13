@@ -25,9 +25,26 @@
             clientKey:@"oSkfTEiEsn43rd7bFn3V3j8x5eAURU5Sqh1gB9kc"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    // Intilatize Facebook Parse SDK
+    [PFFacebookUtils initializeFacebook];
+    
+    //Intilatize Twitter Parse SDK - Make Sure to enter consumerKey and comsumerSecert to you specific app
+    [PFTwitterUtils initializeWithConsumerKey:@"bwPGFwHWSzAwJQbhb5dlGY1j8" consumerSecret:@"85nphqK5mn5jEpVvOChulHohRUvsID5wfgCvlXdtTtYxHxt3Wv"];
+
 
     
     return YES;
+}
+
+// ****************************************************************************
+// App switching methods to support Facebook Single Sign-On.
+// ****************************************************************************
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -46,11 +63,17 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+    [[PFFacebookUtils session] close];
+
+    
     [self saveContext];
 }
 

@@ -24,6 +24,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)showPhotoLibrary{
+    if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == NO)){
+        return;
+        
+    }
+    
+    UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    // Displays saved pictures from the Camera Roll
+    mediaUI.mediaTypes = @[(NSString*)kUTTypeImage];
+    
+    // Hides controls for moving and Scaling pics
+    mediaUI.allowsEditing = NO;
+    
+    mediaUI.delegate = self;
+    
+    // Decrapatied
+    [self.navigationController presentModalViewController:mediaUI animated:YES];
+}
+
 /*
 #pragma mark - Navigation
 

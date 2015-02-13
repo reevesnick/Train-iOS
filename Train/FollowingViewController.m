@@ -25,15 +25,12 @@
 }
 
 -(PFQuery *)queryForTable{
-    
-    // Query Infromation for Parse. Use for specified PFUser
-    PFQuery *query = [PFQuery queryWithClassName:@"Following"];
-    query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
     
     [query orderByDescending:@"createdAt"];
     
-    
     return query;
+
 }
 
 -(void)viewDidLoad{

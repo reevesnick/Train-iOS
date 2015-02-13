@@ -12,12 +12,12 @@
 
 @interface Following : NSObject
 
-@property (strong,nonatomic)NSString *username;
-@property (strong,nonatomic)NSDate *date;
+@property (strong,nonatomic)PFFile *profilePic;
+//@property (strong,nonatomic)NSInteger *likeCount;
+@property (strong,nonatomic)NSDate *dateUploaded;
 @property (strong,nonatomic)PFFile *videoFile;
-@property (strong,nonatomic)NSString *description;
+@property (strong,nonatomic)NSString *caption;
 
-@property (strong,nonatomic) PFQuery *query;
 
 
 @end

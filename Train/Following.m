@@ -10,9 +10,12 @@
 
 @implementation Following
 
-@synthesize username;
-@synthesize description;
+
+@synthesize caption;
 @synthesize videoFile;
-@synthesize date;
+@synthesize dateUploaded;
+@synthesize profilePic;
+//@synthesize likeCount;
+
 
 @end
