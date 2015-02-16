@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        
+        [myAlertView show];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,25 +36,34 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)showPhotoLibrary{
-    if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == NO)){
-        return;
-        
-    }
+
+- (IBAction)takePhoto:(UIButton *)sender {
     
-    UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
-    mediaUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
-    // Displays saved pictures from the Camera Roll
-    mediaUI.mediaTypes = @[(NSString*)kUTTypeImage];
+    [self presentViewController:picker animated:YES completion:NULL];
     
-    // Hides controls for moving and Scaling pics
-    mediaUI.allowsEditing = NO;
+}
+
+- (IBAction)selectPhoto:(UIButton *)sender {
     
-    mediaUI.delegate = self;
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    // Decrapatied
-    [self.navigationController presentModalViewController:mediaUI animated:YES];
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
 }
 
 /*

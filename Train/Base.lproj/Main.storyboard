@@ -8,7 +8,7 @@
         <!--Camera-->
         <scene sceneID="EJA-E3-ovN">
             <objects>
-                <viewController id="bMI-2f-S52" sceneMemberID="viewController">
+                <viewController id="bMI-2f-S52" customClass="RecordingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e04-FF-QoL"/>
                         <viewControllerLayoutGuide type="bottom" id="Kbk-Gu-DdI"/>
@@ -16,9 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="nHM-Wm-dmK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMX-49-38O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="447"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrR-Jt-bLO">
+                                <rect key="frame" x="16" y="455" width="149" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="bMI-2f-S52" eventType="touchUpInside" id="hbE-jN-Hww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZV-he-l6h">
+                                <rect key="frame" x="173" y="455" width="131" height="30"/>
+                                <state key="normal" title="Select ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="bMI-2f-S52" eventType="touchUpInside" id="Bvv-3M-8f2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="pbC-dq-Sbx"/>
+                    <connections>
+                        <outlet property="imageView" destination="BMX-49-38O" id="f2d-i0-OFl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4B-hm-wQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

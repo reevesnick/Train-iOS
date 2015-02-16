@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 
-@interface RecordingViewController : UIViewController
+@interface RecordingViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)takePhoto:  (UIButton *)sender;
+- (IBAction)selectPhoto:(UIButton *)sender;
 
 @end
