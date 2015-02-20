@@ -25,7 +25,7 @@
 }
 
 -(PFQuery *)queryForTable{
-    PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Following"];
     
     [query orderByDescending:@"createdAt"];
     
@@ -55,16 +55,18 @@
         cell = [[FollowingCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    NSString *usernameLabel = [object objectForKey:@"userName"];
-    NSString *descriptionLabel = [object objectForKey:@"commentsPost"];
+    NSString *usernameLabel = [object objectForKey:@"username"];
+    NSString *descriptionLabel = [object objectForKey:@"Description"];
+    NSString *dateLabel = [object objectForKey:@"datePosted"];
     
     PFFile *thumbnail =[object objectForKey:@"videoFile"];
-    cell.videoPlacement.image = [UIImage imageNamed:@"placeholder.png"];
-    cell.videoPlacement.file = thumbnail;
-    [cell.videoPlacement loadInBackground];
+ //   cell.profilePicFile.image = [UIImage imageNamed:@"placeholder.png"];
+    cell.profilePicFile.file = thumbnail;
+    [cell.profilePicFile loadInBackground];
     
-    [cell.usernameLabel setText:[NSString stringWithFormat:@"%@",usernameLabel]];
-    [cell.descriptionLabel setText:[NSString stringWithFormat:@"%@", descriptionLabel]];
+    [cell.date setText:[NSString stringWithFormat:@"%@",dateLabel]];
+    [cell.username setText:[NSString stringWithFormat:@"%@",usernameLabel]];
+    [cell.description setText:[NSString stringWithFormat:@"%@", descriptionLabel]];
     
     return cell;
 }

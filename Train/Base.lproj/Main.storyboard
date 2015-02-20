@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMX-49-38O">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="447"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="281"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrR-Jt-bLO">
-                                <rect key="frame" x="16" y="455" width="149" height="30"/>
+                                <rect key="frame" x="86" y="358" width="149" height="30"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,9 +29,15 @@
                                     <action selector="takePhoto:" destination="bMI-2f-S52" eventType="touchUpInside" id="hbE-jN-Hww"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afu-6S-hMr">
+                                <rect key="frame" x="137" y="462" width="46" height="30"/>
+                                <state key="normal" title="Share ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZV-he-l6h">
-                                <rect key="frame" x="173" y="455" width="131" height="30"/>
-                                <state key="normal" title="Select ">
+                                <rect key="frame" x="95" y="411" width="131" height="30"/>
+                                <state key="normal" title="Select Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -59,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="mm5-qW-Ci1">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="107" id="mm5-qW-Ci1" customClass="ActivityCustomCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mm5-qW-Ci1" id="kOC-q6-Mf7">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -68,13 +74,16 @@
                                             <rect key="frame" x="0.0" y="24" width="57" height="60"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1W-XC-dWg">
-                                            <rect key="frame" x="65" y="24" width="247" height="75"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <rect key="frame" x="65" y="16" width="247" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="d1W-XC-dWg" id="fUJ-VC-T5u"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -218,7 +227,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="492" id="4d5-tJ-Mdv" customClass="FollowingCustomCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="492" id="4d5-tJ-Mdv" customClass="FollowingCustomCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4d5-tJ-Mdv" id="8Km-Oh-S6R">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -235,9 +244,9 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-tN-I1b">
-                                            <rect key="frame" x="8" y="349" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-tN-I1b">
+                                            <rect key="frame" x="8" y="349" width="304" height="74"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -250,8 +259,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLabel" destination="gAc-tN-I1b" id="AP1-hY-m1G"/>
-                                    <outlet property="usernameLabel" destination="ZFt-DX-nM0" id="1id-W3-STk"/>
+                                    <outlet property="date" destination="m4v-R5-NOv" id="EZX-EG-lhK"/>
+                                    <outlet property="description" destination="gAc-tN-I1b" id="xv3-YY-4GN"/>
+                                    <outlet property="username" destination="ZFt-DX-nM0" id="UxV-u3-huh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -318,6 +328,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Train" id="Msn-qX-pzk"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0j8-FS-X0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,11 +357,11 @@
             </objects>
             <point key="canvasLocation" x="-114" y="517"/>
         </scene>
-        <!--Following-->
+        <!--Navigation Controller-->
         <scene sceneID="N49-1g-Xa7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nyz-LM-gd2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Following" id="ILu-cd-1N1"/>
+                    <tabBarItem key="tabBarItem" title="" image="following.png" id="ILu-cd-1N1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="muq-wo-BfF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -364,11 +376,11 @@
             </objects>
             <point key="canvasLocation" x="418" y="863"/>
         </scene>
-        <!--Home -->
+        <!--Navigation Controller-->
         <scene sceneID="eWN-cf-y7a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nwg-Y3-ZJm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home " id="JIC-7k-Vnf"/>
+                    <tabBarItem key="tabBarItem" title="" image="home.png" id="JIC-7k-Vnf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwx-gM-vsc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -383,11 +395,11 @@
             </objects>
             <point key="canvasLocation" x="426" y="202"/>
         </scene>
-        <!--Camera-->
+        <!--Navigation Controller-->
         <scene sceneID="SX8-eW-bWF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cK1-8i-oEz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" id="i5X-B6-jQw"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera.png" id="i5X-B6-jQw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3FZ-uC-YiM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -402,11 +414,11 @@
             </objects>
             <point key="canvasLocation" x="418" y="1516"/>
         </scene>
-        <!--Activity-->
+        <!--Navigation Controller-->
         <scene sceneID="LVd-JZ-h8x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s97-6U-ul9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activity" id="EU0-kf-0M2"/>
+                    <tabBarItem key="tabBarItem" title="" image="activity.png" id="EU0-kf-0M2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="14p-VE-lPu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -421,11 +433,11 @@
             </objects>
             <point key="canvasLocation" x="413" y="2255"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="8Ob-Z6-LDn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fR6-bd-b5m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="FD1-v8-fV1"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile.png" id="FD1-v8-fV1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y1P-Nj-Ihi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -441,6 +453,13 @@
             <point key="canvasLocation" x="410" y="2908"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activity.png" width="50" height="50"/>
+        <image name="camera.png" width="50" height="50"/>
+        <image name="following.png" width="50" height="50"/>
+        <image name="home.png" width="50" height="50"/>
+        <image name="profile.png" width="50" height="50"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

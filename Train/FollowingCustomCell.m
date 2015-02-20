@@ -7,8 +7,15 @@
 //
 
 #import "FollowingCustomCell.h"
+#import "Following.h"
 
 @implementation FollowingCustomCell
+
+@synthesize username;
+@synthesize profilePicFile;
+@synthesize description;
+@synthesize date;
+@synthesize videoFile;
 
 /*
 // Only override drawRect: if you perform custom drawing.

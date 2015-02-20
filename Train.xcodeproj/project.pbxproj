@@ -63,9 +63,19 @@
 		D19D53961A64951B00FCAE61 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53911A64951B00FCAE61 /* Parse.framework */; };
 		D19D53981A64951B00FCAE61 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53931A64951B00FCAE61 /* ParseFacebookUtils.framework */; };
 		D19D53991A64951B00FCAE61 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53941A64951B00FCAE61 /* ParseUI.framework */; };
+		D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1C2081A968E8D00C3FB2C /* Activity.m */; };
+		D1D1C20C1A968F3100C3FB2C /* ActivityCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1C20B1A968F3100C3FB2C /* ActivityCustomCell.m */; };
+		D1D1C20F1A96902200C3FB2C /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1C20E1A96902200C3FB2C /* ActivityViewController.m */; };
 		D1D4C1D71A7761C300AA9574 /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D4C1D61A7761C300AA9574 /* FollowingViewController.m */; };
 		D1D4C1DB1A77E10300AA9574 /* Following.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D4C1DA1A77E10300AA9574 /* Following.m */; };
 		D1D4C1DE1A78277800AA9574 /* FollowingCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D4C1DD1A78277800AA9574 /* FollowingCustomCell.m */; };
+		D1EA98B81A967FD1005B0FB3 /* activity.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B11A967FD1005B0FB3 /* activity.png */; };
+		D1EA98B91A967FD1005B0FB3 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B21A967FD1005B0FB3 /* camera.png */; };
+		D1EA98BA1A967FD1005B0FB3 /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B31A967FD1005B0FB3 /* following.png */; };
+		D1EA98BB1A967FD1005B0FB3 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B41A967FD1005B0FB3 /* home.png */; };
+		D1EA98BC1A967FD1005B0FB3 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B51A967FD1005B0FB3 /* ic_launcher.png */; };
+		D1EA98BD1A967FD1005B0FB3 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B61A967FD1005B0FB3 /* profile.png */; };
+		D1EA98BE1A967FD1005B0FB3 /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B71A967FD1005B0FB3 /* train.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,12 +179,25 @@
 		D19D53911A64951B00FCAE61 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D19D53931A64951B00FCAE61 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		D19D53941A64951B00FCAE61 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D1D1C2071A968E8D00C3FB2C /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		D1D1C2081A968E8D00C3FB2C /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		D1D1C20A1A968F3100C3FB2C /* ActivityCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCustomCell.h; sourceTree = "<group>"; };
+		D1D1C20B1A968F3100C3FB2C /* ActivityCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCustomCell.m; sourceTree = "<group>"; };
+		D1D1C20D1A96902200C3FB2C /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		D1D1C20E1A96902200C3FB2C /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		D1D4C1D51A7761C300AA9574 /* FollowingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingViewController.h; sourceTree = "<group>"; };
 		D1D4C1D61A7761C300AA9574 /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
 		D1D4C1D91A77E10300AA9574 /* Following.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Following.h; sourceTree = "<group>"; };
 		D1D4C1DA1A77E10300AA9574 /* Following.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Following.m; sourceTree = "<group>"; };
 		D1D4C1DC1A78277800AA9574 /* FollowingCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingCustomCell.h; sourceTree = "<group>"; };
 		D1D4C1DD1A78277800AA9574 /* FollowingCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingCustomCell.m; sourceTree = "<group>"; };
+		D1EA98B11A967FD1005B0FB3 /* activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity.png; sourceTree = "<group>"; };
+		D1EA98B21A967FD1005B0FB3 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		D1EA98B31A967FD1005B0FB3 /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
+		D1EA98B41A967FD1005B0FB3 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		D1EA98B51A967FD1005B0FB3 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		D1EA98B61A967FD1005B0FB3 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		D1EA98B71A967FD1005B0FB3 /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +265,7 @@
 		D13754A71A5DA372001D0E9E /* Train */ = {
 			isa = PBXGroup;
 			children = (
+				D1D1C2061A968E6D00C3FB2C /* Activity */,
 				D188582A1A84138100CC2B56 /* Home */,
 				D18858291A8412B400CC2B56 /* Login/Signup */,
 				D1FD6BC01A8273660009A7E1 /* Camera */,
@@ -260,6 +284,7 @@
 		D13754A81A5DA372001D0E9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1EA98B01A967FD1005B0FB3 /* Train Icon */,
 				D13754A91A5DA373001D0E9E /* Info.plist */,
 				D13754AA1A5DA373001D0E9E /* main.m */,
 			);
@@ -420,6 +445,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		D1D1C2061A968E6D00C3FB2C /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D1D1C2071A968E8D00C3FB2C /* Activity.h */,
+				D1D1C2081A968E8D00C3FB2C /* Activity.m */,
+				D1D1C20A1A968F3100C3FB2C /* ActivityCustomCell.h */,
+				D1D1C20B1A968F3100C3FB2C /* ActivityCustomCell.m */,
+				D1D1C20D1A96902200C3FB2C /* ActivityViewController.h */,
+				D1D1C20E1A96902200C3FB2C /* ActivityViewController.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
 		D1D4C1D81A77E0DC00AA9574 /* Following */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +469,20 @@
 				D1D4C1DD1A78277800AA9574 /* FollowingCustomCell.m */,
 			);
 			name = Following;
+			sourceTree = "<group>";
+		};
+		D1EA98B01A967FD1005B0FB3 /* Train Icon */ = {
+			isa = PBXGroup;
+			children = (
+				D1EA98B11A967FD1005B0FB3 /* activity.png */,
+				D1EA98B21A967FD1005B0FB3 /* camera.png */,
+				D1EA98B31A967FD1005B0FB3 /* following.png */,
+				D1EA98B41A967FD1005B0FB3 /* home.png */,
+				D1EA98B51A967FD1005B0FB3 /* ic_launcher.png */,
+				D1EA98B61A967FD1005B0FB3 /* profile.png */,
+				D1EA98B71A967FD1005B0FB3 /* train.png */,
+			);
+			path = "Train Icon";
 			sourceTree = "<group>";
 		};
 		D1FD6BC01A8273660009A7E1 /* Camera */ = {
@@ -523,7 +575,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13754B71A5DA373001D0E9E /* Main.storyboard in Resources */,
+				D1EA98B81A967FD1005B0FB3 /* activity.png in Resources */,
+				D1EA98BB1A967FD1005B0FB3 /* home.png in Resources */,
+				D1EA98B91A967FD1005B0FB3 /* camera.png in Resources */,
 				D13754B91A5DA373001D0E9E /* Images.xcassets in Resources */,
+				D1EA98BC1A967FD1005B0FB3 /* ic_launcher.png in Resources */,
+				D1EA98BA1A967FD1005B0FB3 /* following.png in Resources */,
+				D1EA98BD1A967FD1005B0FB3 /* profile.png in Resources */,
+				D1EA98BE1A967FD1005B0FB3 /* train.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +608,7 @@
 				D17B43C71A709F8400FF682C /* SCRecordSession.m in Sources */,
 				D1D4C1DE1A78277800AA9574 /* FollowingCustomCell.m in Sources */,
 				D17B43C01A709F8400FF682C /* SCMediaTypeConfiguration.m in Sources */,
+				D1D1C20C1A968F3100C3FB2C /* ActivityCustomCell.m in Sources */,
 				D19D53701A63383200FCAE61 /* RecordingViewController.m in Sources */,
 				D17B43C11A709F8400FF682C /* SCPhotoConfiguration.m in Sources */,
 				D13754AE1A5DA373001D0E9E /* AppDelegate.m in Sources */,
@@ -559,11 +619,13 @@
 				D1D4C1DB1A77E10300AA9574 /* Following.m in Sources */,
 				D17B43C21A709F8400FF682C /* SCPlayer.m in Sources */,
 				D17B43C51A709F8400FF682C /* SCRecorderFocusView.m in Sources */,
+				D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */,
 				D13754AB1A5DA373001D0E9E /* main.m in Sources */,
 				D19D53841A63399C00FCAE61 /* PBJVideoPlayerController.m in Sources */,
 				D17B43CA1A709F8400FF682C /* SCVideoConfiguration.m in Sources */,
 				D17B43C31A709F8400FF682C /* SCRecorder.m in Sources */,
 				D17B43C61A709F8400FF682C /* SCRecorderTools.m in Sources */,
+				D1D1C20F1A96902200C3FB2C /* ActivityViewController.m in Sources */,
 				D17B43BF1A709F8400FF682C /* SCImageView.m in Sources */,
 				D1D4C1D71A7761C300AA9574 /* FollowingViewController.m in Sources */,
 				D17B43BA1A709F8400FF682C /* SCAudioConfiguration.m in Sources */,

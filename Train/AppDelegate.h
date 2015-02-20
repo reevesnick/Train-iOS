@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <ParseUI/ParseUI.h>
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

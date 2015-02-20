@@ -10,8 +10,8 @@
 
 @implementation Following
 
-
-@synthesize caption;
+@synthesize username;
+@synthesize description;
 @synthesize videoFile;
 @synthesize dateUploaded;
 @synthesize profilePic;

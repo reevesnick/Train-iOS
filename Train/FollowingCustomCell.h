@@ -11,9 +11,11 @@
 
 @interface FollowingCustomCell : PFTableViewCell
 
-@property (weak,nonatomic) IBOutlet UILabel *dateLabel;
-@property (weak,nonatomic) IBOutlet UILabel *usernameLabel;
-@property (weak,nonatomic) IBOutlet PFImageView *videoPlacement;
-@property (weak,nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak,nonatomic) IBOutlet UILabel *date;
+@property (weak,nonatomic) IBOutlet UILabel *username;
+@property (weak,nonatomic) IBOutlet UILabel *description;
+
+@property (strong,nonatomic) IBOutlet PFImageView *profilePicFile;
+@property (strong,nonatomic) IBOutlet UIImageView *videoFile;
 
 @end
