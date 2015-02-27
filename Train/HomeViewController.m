@@ -32,6 +32,8 @@
      PFLoginViewController and PFSignUpViewController subclass to create a customtmize a view to custom the login screen
      and the signup screen. For more, check out http://www.parse.com/tutorails for more*/
     
+    
+    /*
     if(![PFUser currentUser]){
         
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc]init];
@@ -44,11 +46,11 @@
         [logInViewController setSignUpController:signUpViewController];
         
         [self presentViewController:logInViewController animated:YES completion:NULL];
-        
+        */
         
         //self.view.backgroundColor = [UIColor colorWithPatternImage:
         //  [UIImage imageNamed:@"sidebar_title.png"]];
-    }
+    
 
 }
 

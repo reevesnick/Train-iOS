@@ -8,12 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface RecordingViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface RecordingViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 
+// Image View Properties
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
+// Video Properties
+@property (strong,nonatomic) NSURL *videoURL;
+@property (strong,nonatomic) MPMoviePlayerController *videoController;
+
+// Photo Action
 - (IBAction)takePhoto:  (UIButton *)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;
+
+// Catageory TableView
+
+@property (strong,nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [Parse enableLocalDatastore];
+  //  [Parse enableLocalDatastore];
     
     // Parse SDK App ID and Client Key
     
@@ -34,6 +34,32 @@
     //Intilatize Twitter Parse SDK - Make Sure to enter consumerKey and comsumerSecert to you specific app
     [PFTwitterUtils initializeWithConsumerKey:@"bwPGFwHWSzAwJQbhb5dlGY1j8" consumerSecret:@"85nphqK5mn5jEpVvOChulHohRUvsID5wfgCvlXdtTtYxHxt3Wv"];
 
+    [[UINavigationBar appearance]setBarTintColor:[UIColor blackColor]];
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.0];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          
+                                                          
+                                                          [UIColor colorWithRed:245.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                          NSForegroundColorAttributeName, shadow,NSShadowAttributeName,
+                                                          [UIFont fontWithName:@"Euphemia UCAS"size:21.0],NSFontAttributeName, nil]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    UIBarButtonItem *barButtonAppearance = [UIBarButtonItem appearance];
+    [barButtonAppearance setTintColor:[UIColor whiteColor]];
+
+    
+    [[UITabBar appearance]setBarTintColor:[UIColor blackColor]];
+    
+    [PFImageView class];
+    
 
     
     return YES;

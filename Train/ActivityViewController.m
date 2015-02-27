@@ -14,7 +14,9 @@
 
 @end
 
-@implementation ActivityViewController
+@implementation ActivityViewController{
+    NSArray *items;
+}
 
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -37,6 +39,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //items = [NSArray arrayWithObject:@"JenSelter started following you" ,@"reevesnick start follwoing two people", @"JenSelter started following two peoples",nil];
+}
+
+-(void)viewDidUnload{
+    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +71,10 @@
     cell.profilePicFile.file = thumbnail;
     [cell.profilePicFile loadInBackground];
     
-    //[cell.description setText:[NSString stringWithFormat:@"%@",descriptionLabel]];
+  //  [cell.description setText:[NSString stringWithFormat:@"%@",descriptionLabel]];
+
+    
+    
     
     
     

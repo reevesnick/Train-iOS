@@ -11,7 +11,7 @@
 
 @interface ActivityCustomCell : PFTableViewCell
 
-@property (strong,nonatomic) IBOutlet PFImageView *profilePicFile;
+@property (weak,nonatomic) IBOutlet PFImageView *profilePicFile;
 @property (weak, nonatomic) IBOutlet UILabel * descriptionLabel;
 
 @end

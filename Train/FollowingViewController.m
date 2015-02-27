@@ -60,7 +60,7 @@
     NSString *dateLabel = [object objectForKey:@"datePosted"];
     
     PFFile *thumbnail =[object objectForKey:@"videoFile"];
- //   cell.profilePicFile.image = [UIImage imageNamed:@"placeholder.png"];
+    cell.profilePicFile.image = [UIImage imageNamed:@"placeholder.png"];
     cell.profilePicFile.file = thumbnail;
     [cell.profilePicFile loadInBackground];
     

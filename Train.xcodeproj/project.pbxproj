@@ -35,6 +35,8 @@
 		D17B43CA1A709F8400FF682C /* SCVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B43B41A709F8400FF682C /* SCVideoConfiguration.m */; };
 		D17B43CB1A709F8400FF682C /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B43B61A709F8400FF682C /* SCVideoPlayerView.m */; };
 		D17B43CD1A709F9F00FF682C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B43CC1A709F9F00FF682C /* CoreAudio.framework */; };
+		D187D2B11A9FE86100307F57 /* TrainCatagoriesSeque.m in Sources */ = {isa = PBXBuildFile; fileRef = D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */; };
+		D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D187D2B21A9FEC8500307F57 /* placeholder.png */; };
 		D188582D1A8413A400CC2B56 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D188582C1A8413A400CC2B56 /* HomeViewController.m */; };
 		D188582F1A8415B900CC2B56 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D188582E1A8415B900CC2B56 /* Twitter.framework */; };
 		D18858311A8415C300CC2B56 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18858301A8415C300CC2B56 /* Social.framework */; };
@@ -147,8 +149,11 @@
 		D17B43B51A709F8400FF682C /* SCVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVideoPlayerView.h; sourceTree = "<group>"; };
 		D17B43B61A709F8400FF682C /* SCVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVideoPlayerView.m; sourceTree = "<group>"; };
 		D17B43CC1A709F9F00FF682C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D187D2AF1A9FE86000307F57 /* TrainCatagoriesSeque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainCatagoriesSeque.h; sourceTree = "<group>"; };
+		D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainCatagoriesSeque.m; sourceTree = "<group>"; };
+		D187D2B21A9FEC8500307F57 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Assets/placeholder.png; sourceTree = SOURCE_ROOT; };
 		D188582B1A8413A400CC2B56 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		D188582C1A8413A400CC2B56 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D188582C1A8413A400CC2B56 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		D188582E1A8415B900CC2B56 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		D18858301A8415C300CC2B56 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D18858321A8415FC00CC2B56 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -274,6 +279,8 @@
 				D13754AC1A5DA373001D0E9E /* AppDelegate.h */,
 				D13754AD1A5DA373001D0E9E /* AppDelegate.m */,
 				D13754B51A5DA373001D0E9E /* Main.storyboard */,
+				D187D2AF1A9FE86000307F57 /* TrainCatagoriesSeque.h */,
+				D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */,
 				D13754B81A5DA373001D0E9E /* Images.xcassets */,
 				D13754AF1A5DA373001D0E9E /* Train.xcdatamodeld */,
 				D13754A81A5DA372001D0E9E /* Supporting Files */,
@@ -284,6 +291,7 @@
 		D13754A81A5DA372001D0E9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D187D2B21A9FEC8500307F57 /* placeholder.png */,
 				D1EA98B01A967FD1005B0FB3 /* Train Icon */,
 				D13754A91A5DA373001D0E9E /* Info.plist */,
 				D13754AA1A5DA373001D0E9E /* main.m */,
@@ -577,6 +585,7 @@
 				D13754B71A5DA373001D0E9E /* Main.storyboard in Resources */,
 				D1EA98B81A967FD1005B0FB3 /* activity.png in Resources */,
 				D1EA98BB1A967FD1005B0FB3 /* home.png in Resources */,
+				D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */,
 				D1EA98B91A967FD1005B0FB3 /* camera.png in Resources */,
 				D13754B91A5DA373001D0E9E /* Images.xcassets in Resources */,
 				D1EA98BC1A967FD1005B0FB3 /* ic_launcher.png in Resources */,
@@ -622,6 +631,7 @@
 				D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */,
 				D13754AB1A5DA373001D0E9E /* main.m in Sources */,
 				D19D53841A63399C00FCAE61 /* PBJVideoPlayerController.m in Sources */,
+				D187D2B11A9FE86100307F57 /* TrainCatagoriesSeque.m in Sources */,
 				D17B43CA1A709F8400FF682C /* SCVideoConfiguration.m in Sources */,
 				D17B43C31A709F8400FF682C /* SCRecorder.m in Sources */,
 				D17B43C61A709F8400FF682C /* SCRecorderTools.m in Sources */,

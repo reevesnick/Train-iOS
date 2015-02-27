@@ -11,7 +11,7 @@
 
 @interface Activity : NSObject
 
-@property (weak,nonatomic)PFFile *profilePic;
-@property (weak,nonatomic)NSString *description;
+@property (strong,nonatomic)PFFile *profilePic;
+@property (strong,nonatomic)NSString *description;
 
 @end

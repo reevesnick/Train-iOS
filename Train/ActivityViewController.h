@@ -8,6 +8,7 @@
 
 #import <ParseUI/ParseUI.h>
 #import <Parse/Parse.h>
+#import <UIKit/UIKit.h>
 
 @interface ActivityViewController : PFQueryTableViewController
 

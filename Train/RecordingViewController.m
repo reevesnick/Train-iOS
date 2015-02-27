@@ -12,23 +12,17 @@
 
 @end
 
-@implementation RecordingViewController
+@implementation RecordingViewController{
+    NSArray *items;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"OK"
-                                                    otherButtonTitles: nil];
-        
-        [myAlertView show];
-        
-    }
+    items = [NSArray arrayWithObjects:@"Shoulders",@"Back",@"Chest",@"Arms",@"Core",@"Legs", nil];
+    
+    [self launchVideoCamera];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,14 +54,66 @@
     
 }
 
+-(void)launchVideoCamera{
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        picker.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, nil];
+        
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
+    
+    else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Camera Unavailable"
+                                                       message:@"Unable to find a camera on your device."
+                                                      delegate:nil
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil, nil];
+        [alert show];
+        alert = nil;
+    }
+
+}
+
+#pragma mark - UITableViewDataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [items count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *simpleTableIdentifier = @"TrainItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [items objectAtIndex:indexPath.row];
+    cell.textLabel.numberOfLines = 6;
+    
+    return cell;
+}
+
+
 #pragma mark - Image Picker Controller delegate methods
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.imageView.image = chosenImage;
-    
+    self.videoURL = info[UIImagePickerControllerMediaURL];
     [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+    self.videoController = [[MPMoviePlayerController alloc] init];
+    
+    [self.videoController setContentURL:self.videoURL];
+    [self.videoController.view setFrame:CGRectMake(0, 64, 90, 90)];
+    [self.view addSubview:self.videoController.view];
+    
+    [self.videoController play];
     
 }
 
