@@ -2,16 +2,15 @@
 //  ActivityCustomCell.h
 //  Train
 //
-//  Created by Neegbeah Reeves on 2/19/15.
+//  Created by Neegbeah Reeves on 3/4/15.
 //
 //
 
-#import <ParseUI/ParseUI.h>
-#import <Parse/Parse.h>
+#import <UIKit/UIKit.h>
 
-@interface ActivityCustomCell : PFTableViewCell
+@interface ActivityCustomCell : UITableViewCell
 
-@property (weak,nonatomic) IBOutlet PFImageView *profilePicFile;
-@property (weak, nonatomic) IBOutlet UILabel * descriptionLabel;
+@property (weak,nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak,nonatomic) IBOutlet UIImageView *profilePicLabel;
 
 @end
