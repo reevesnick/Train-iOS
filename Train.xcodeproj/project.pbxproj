@@ -69,6 +69,19 @@
 		D1CF80071AA7D279008D6138 /* JenSelterProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80051AA7D279008D6138 /* JenSelterProfilePic.jpg */; };
 		D1CF80081AA7D279008D6138 /* NeeProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80061AA7D279008D6138 /* NeeProfilePic.jpg */; };
 		D1CF800E1AA7D5FD008D6138 /* ActivityCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF800D1AA7D5FD008D6138 /* ActivityCustomCell.m */; };
+		D1CF80111AA7D666008D6138 /* FollowingCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80101AA7D666008D6138 /* FollowingCustomCell.m */; };
+		D1CF80141AA7D7E6008D6138 /* FollowingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80131AA7D7E6008D6138 /* FollowingTableViewController.m */; };
+		D1CF80181AA7E208008D6138 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80151AA7E208008D6138 /* background.png */; };
+		D1CF80191AA7E208008D6138 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80161AA7E208008D6138 /* background@2x.png */; };
+		D1CF801A1AA7E208008D6138 /* background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80171AA7E208008D6138 /* background@3x.png */; };
+		D1CF801D1AA7EC93008D6138 /* Likes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CF801C1AA7EC93008D6138 /* Likes.storyboard */; };
+		D1CF80201AA8B06E008D6138 /* Likes.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF801F1AA8B06E008D6138 /* Likes.m */; };
+		D1CF80231AA8B0B8008D6138 /* LikesCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80221AA8B0B8008D6138 /* LikesCustomView.m */; };
+		D1CF80261AA8B459008D6138 /* LikesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80251AA8B459008D6138 /* LikesTableViewController.m */; };
+		D1CF802A1AA8BB3A008D6138 /* Comments.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80291AA8BB3A008D6138 /* Comments.m */; };
+		D1CF802C1AA8BB52008D6138 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CF802B1AA8BB52008D6138 /* Comments.storyboard */; };
+		D1CF802F1AA8BCBF008D6138 /* CommentsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF802E1AA8BCBF008D6138 /* CommentsCustomCell.m */; };
+		D1CF80321AA8BD28008D6138 /* CommentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80311AA8BD28008D6138 /* CommentsTableViewController.m */; };
 		D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1C2081A968E8D00C3FB2C /* Activity.m */; };
 		D1D4C1DB1A77E10300AA9574 /* Following.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D4C1DA1A77E10300AA9574 /* Following.m */; };
 		D1EA98B81A967FD1005B0FB3 /* activity.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EA98B11A967FD1005B0FB3 /* activity.png */; };
@@ -190,6 +203,27 @@
 		D1CF80061AA7D279008D6138 /* NeeProfilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NeeProfilePic.jpg; sourceTree = "<group>"; };
 		D1CF800C1AA7D5FD008D6138 /* ActivityCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCustomCell.h; sourceTree = "<group>"; };
 		D1CF800D1AA7D5FD008D6138 /* ActivityCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCustomCell.m; sourceTree = "<group>"; };
+		D1CF800F1AA7D666008D6138 /* FollowingCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingCustomCell.h; sourceTree = "<group>"; };
+		D1CF80101AA7D666008D6138 /* FollowingCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingCustomCell.m; sourceTree = "<group>"; };
+		D1CF80121AA7D7E6008D6138 /* FollowingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingTableViewController.h; sourceTree = "<group>"; };
+		D1CF80131AA7D7E6008D6138 /* FollowingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingTableViewController.m; sourceTree = "<group>"; };
+		D1CF80151AA7E208008D6138 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Assets/background.png; sourceTree = SOURCE_ROOT; };
+		D1CF80161AA7E208008D6138 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "Assets/background@2x.png"; sourceTree = SOURCE_ROOT; };
+		D1CF80171AA7E208008D6138 /* background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@3x.png"; path = "Assets/background@3x.png"; sourceTree = SOURCE_ROOT; };
+		D1CF801C1AA7EC93008D6138 /* Likes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Likes.storyboard; sourceTree = "<group>"; };
+		D1CF801E1AA8B06E008D6138 /* Likes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Likes.h; sourceTree = "<group>"; };
+		D1CF801F1AA8B06E008D6138 /* Likes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Likes.m; sourceTree = "<group>"; };
+		D1CF80211AA8B0B8008D6138 /* LikesCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikesCustomView.h; sourceTree = "<group>"; };
+		D1CF80221AA8B0B8008D6138 /* LikesCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikesCustomView.m; sourceTree = "<group>"; };
+		D1CF80241AA8B459008D6138 /* LikesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikesTableViewController.h; sourceTree = "<group>"; };
+		D1CF80251AA8B459008D6138 /* LikesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikesTableViewController.m; sourceTree = "<group>"; };
+		D1CF80281AA8BB3A008D6138 /* Comments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comments.h; sourceTree = "<group>"; };
+		D1CF80291AA8BB3A008D6138 /* Comments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comments.m; sourceTree = "<group>"; };
+		D1CF802B1AA8BB52008D6138 /* Comments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Comments.storyboard; sourceTree = "<group>"; };
+		D1CF802D1AA8BCBF008D6138 /* CommentsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsCustomCell.h; sourceTree = "<group>"; };
+		D1CF802E1AA8BCBF008D6138 /* CommentsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsCustomCell.m; sourceTree = "<group>"; };
+		D1CF80301AA8BD28008D6138 /* CommentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewController.h; sourceTree = "<group>"; };
+		D1CF80311AA8BD28008D6138 /* CommentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewController.m; sourceTree = "<group>"; };
 		D1D1C2071A968E8D00C3FB2C /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
 		D1D1C2081A968E8D00C3FB2C /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 		D1D4C1D91A77E10300AA9574 /* Following.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Following.h; sourceTree = "<group>"; };
@@ -268,6 +302,8 @@
 		D13754A71A5DA372001D0E9E /* Train */ = {
 			isa = PBXGroup;
 			children = (
+				D1CF80271AA8BB23008D6138 /* Comments */,
+				D1CF801B1AA7EC7F008D6138 /* Likes */,
 				D1D1C2061A968E6D00C3FB2C /* Activity */,
 				D188582A1A84138100CC2B56 /* Home */,
 				D18858291A8412B400CC2B56 /* Login/Signup */,
@@ -289,6 +325,9 @@
 		D13754A81A5DA372001D0E9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1CF80151AA7E208008D6138 /* background.png */,
+				D1CF80161AA7E208008D6138 /* background@2x.png */,
+				D1CF80171AA7E208008D6138 /* background@3x.png */,
 				D1CF80041AA7D279008D6138 /* DummyPic */,
 				D187D2B21A9FEC8500307F57 /* placeholder.png */,
 				D1EA98B01A967FD1005B0FB3 /* Train Icon */,
@@ -462,6 +501,34 @@
 			path = Assets/DummyPic;
 			sourceTree = SOURCE_ROOT;
 		};
+		D1CF801B1AA7EC7F008D6138 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				D1CF801C1AA7EC93008D6138 /* Likes.storyboard */,
+				D1CF801E1AA8B06E008D6138 /* Likes.h */,
+				D1CF801F1AA8B06E008D6138 /* Likes.m */,
+				D1CF80211AA8B0B8008D6138 /* LikesCustomView.h */,
+				D1CF80221AA8B0B8008D6138 /* LikesCustomView.m */,
+				D1CF80241AA8B459008D6138 /* LikesTableViewController.h */,
+				D1CF80251AA8B459008D6138 /* LikesTableViewController.m */,
+			);
+			name = Likes;
+			sourceTree = "<group>";
+		};
+		D1CF80271AA8BB23008D6138 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				D1CF80281AA8BB3A008D6138 /* Comments.h */,
+				D1CF80291AA8BB3A008D6138 /* Comments.m */,
+				D1CF802B1AA8BB52008D6138 /* Comments.storyboard */,
+				D1CF802D1AA8BCBF008D6138 /* CommentsCustomCell.h */,
+				D1CF802E1AA8BCBF008D6138 /* CommentsCustomCell.m */,
+				D1CF80301AA8BD28008D6138 /* CommentsTableViewController.h */,
+				D1CF80311AA8BD28008D6138 /* CommentsTableViewController.m */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
 		D1D1C2061A968E6D00C3FB2C /* Activity */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +547,10 @@
 			children = (
 				D1D4C1D91A77E10300AA9574 /* Following.h */,
 				D1D4C1DA1A77E10300AA9574 /* Following.m */,
+				D1CF800F1AA7D666008D6138 /* FollowingCustomCell.h */,
+				D1CF80101AA7D666008D6138 /* FollowingCustomCell.m */,
+				D1CF80121AA7D7E6008D6138 /* FollowingTableViewController.h */,
+				D1CF80131AA7D7E6008D6138 /* FollowingTableViewController.m */,
 			);
 			name = Following;
 			sourceTree = "<group>";
@@ -589,16 +660,21 @@
 			files = (
 				D13754B71A5DA373001D0E9E /* Main.storyboard in Resources */,
 				D1EA98B81A967FD1005B0FB3 /* activity.png in Resources */,
+				D1CF80181AA7E208008D6138 /* background.png in Resources */,
 				D1EA98BB1A967FD1005B0FB3 /* home.png in Resources */,
+				D1CF802C1AA8BB52008D6138 /* Comments.storyboard in Resources */,
 				D1CF80071AA7D279008D6138 /* JenSelterProfilePic.jpg in Resources */,
 				D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */,
 				D1EA98B91A967FD1005B0FB3 /* camera.png in Resources */,
 				D13754B91A5DA373001D0E9E /* Images.xcassets in Resources */,
 				D1EA98BC1A967FD1005B0FB3 /* ic_launcher.png in Resources */,
 				D1EA98BA1A967FD1005B0FB3 /* following.png in Resources */,
+				D1CF80191AA7E208008D6138 /* background@2x.png in Resources */,
 				D1CF80081AA7D279008D6138 /* NeeProfilePic.jpg in Resources */,
 				D1EA98BD1A967FD1005B0FB3 /* profile.png in Resources */,
+				D1CF801A1AA7E208008D6138 /* background@3x.png in Resources */,
 				D1EA98BE1A967FD1005B0FB3 /* train.png in Resources */,
+				D1CF801D1AA7EC93008D6138 /* Likes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,15 +694,22 @@
 			files = (
 				D17B43B71A709F8400FF682C /* CIImageRendererUtils.m in Sources */,
 				D17B43B91A709F8400FF682C /* SCAssetExportSession.m in Sources */,
+				D1CF80111AA7D666008D6138 /* FollowingCustomCell.m in Sources */,
 				D17B43BB1A709F8400FF682C /* SCAudioTools.m in Sources */,
 				D17B43BE1A709F8400FF682C /* SCFilterSelectorView.m in Sources */,
 				D17B43BD1A709F8400FF682C /* SCFilterGroup.m in Sources */,
+				D1CF80201AA8B06E008D6138 /* Likes.m in Sources */,
+				D1CF80321AA8BD28008D6138 /* CommentsTableViewController.m in Sources */,
+				D1CF80141AA7D7E6008D6138 /* FollowingTableViewController.m in Sources */,
+				D1CF80231AA8B0B8008D6138 /* LikesCustomView.m in Sources */,
 				D17B43C71A709F8400FF682C /* SCRecordSession.m in Sources */,
 				D17B43C01A709F8400FF682C /* SCMediaTypeConfiguration.m in Sources */,
 				D19D53701A63383200FCAE61 /* RecordingViewController.m in Sources */,
 				D1CF800E1AA7D5FD008D6138 /* ActivityCustomCell.m in Sources */,
+				D1CF802A1AA8BB3A008D6138 /* Comments.m in Sources */,
 				D17B43C11A709F8400FF682C /* SCPhotoConfiguration.m in Sources */,
 				D13754AE1A5DA373001D0E9E /* AppDelegate.m in Sources */,
+				D1CF802F1AA8BCBF008D6138 /* CommentsCustomCell.m in Sources */,
 				D19D53851A63399C00FCAE61 /* PBJVideoView.m in Sources */,
 				D17B43CB1A709F8400FF682C /* SCVideoPlayerView.m in Sources */,
 				D17B43B81A709F8400FF682C /* SCArchivedVector.m in Sources */,
@@ -646,6 +729,7 @@
 				D17B43BA1A709F8400FF682C /* SCAudioConfiguration.m in Sources */,
 				D17B43C81A709F8400FF682C /* SCSampleBufferHolder.m in Sources */,
 				D17B43C91A709F8400FF682C /* SCSwipeableFilterView.m in Sources */,
+				D1CF80261AA8B459008D6138 /* LikesTableViewController.m in Sources */,
 				D188582D1A8413A400CC2B56 /* HomeViewController.m in Sources */,
 				D13754B11A5DA373001D0E9E /* Train.xcdatamodeld in Sources */,
 				D17B43C41A709F8400FF682C /* SCRecorderFocusTargetView.m in Sources */,

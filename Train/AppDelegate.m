@@ -58,8 +58,8 @@
     
     [[UITabBar appearance]setBarTintColor:[UIColor blackColor]];
     
-    [PFImageView class];
-    
+ 
+
 
     
     return YES;

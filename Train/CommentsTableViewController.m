@@ -1,55 +1,56 @@
 //
-//  ActivityTableViewController.m
+//  CommentsTableViewController.m
 //  Train
 //
-//  Created by Neegbeah Reeves on 3/4/15.
+//  Created by Neegbeah Reeves on 3/5/15.
 //
 //
 
-#import "ActivityTableViewController.h"
-#import "Activity.h"
-#import "ActivityCustomCell.h"
+#import "CommentsTableViewController.h"
+#import "Comments.h"
+#import "CommentsCustomCell.h"
 
-@interface ActivityTableViewController (){
-    NSArray *description;
+@interface CommentsTableViewController (){
+    NSArray *comments;
+    NSArray *username;
     NSArray *profilePic;
 }
 
+
 @end
 
-@implementation ActivityTableViewController
+@implementation CommentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.activity = [NSMutableArray arrayWithCapacity:5];
+    self.comments = [NSMutableArray arrayWithCapacity:10];
     
-    Activity *act = [[Activity alloc] init];
-    act.description = @"JenSelter is now following you";
-    act.profilePic = @"JenSelterProfilePic.jpg";
-    [self.activity addObject:act];
+    Comments *com = [[Comments alloc] init];
+    com.username = @"JenSelter";
+    //com.profilePic =@"JenSelterProfilePic.jpg";
+    com.comment =@"Awesome Video!";
+    [self.comments addObject:com];
     
-    act = [[Activity alloc] init];
-    act.description = @"reevesnick is following 3 people";
-    act.profilePic = @"NeeProfilePic.jpg";
-    [self.activity addObject:act];
+    com = [[Comments alloc] init];
+    com.username = @"reevesnick";
+    //com.profilePic =@"NeeProfilePic.jpg";
+    com.comment = @"Great way to stay in shape!";
+    [self.comments addObject:com];
     
-    act = [[Activity alloc] init];
-    act.description = @"reevesnick commented on JenSelter page";
-    act.profilePic = @"NeeProfilePic.jpg";
-    [self.activity addObject:act];
+    com = [[Comments alloc] init];
+    com.username = @"GeorgeD";
+    //com.profilePic =@"placeholder.png";
+    com.comment = @"Really liking this";
+    [self.comments addObject:com];
     
-    act = [[Activity alloc] init];
-    act.description = @"JenSelter is following NikkiBellaWWE";
-    act.profilePic = @"JenSelterProfilePic.jpg";
-    [self.activity addObject:act];
+    com = [[Comments alloc] init];
+    com.username = @"TerryCrews";
+   // com.profilePic =@"placeholder.png";
+    com.comment =@"Great technique";
+    [self.comments addObject:com];
+
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,21 +67,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.activity count];
+    return [self.comments count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    // Configure the cell...
     
     static NSString *CellIdentifier = @"Cell";
-    ActivityCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    CommentsCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Activity *a = (self.activity)[indexPath.row];
-    cell.descriptionLabel.text = a.description;
-    cell.profilePicLabel.image = [UIImage imageNamed:a.profilePic];
-   // cell.yearLabel.text = movie.year;
-    // Configure the cell...
+    Comments *c = (self.comments)[indexPath.row];
+    cell.usernameLabel.text = c.description;
+   // cell.profilePicLabel.image = [UIImage imageNamed:c.profilePic];
+    cell.commentsLabel.text = c.comment;
+
     
     return cell;
 }

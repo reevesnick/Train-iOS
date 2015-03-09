@@ -1,55 +1,64 @@
 //
-//  ActivityTableViewController.m
+//  LikesTableViewController.m
 //  Train
 //
-//  Created by Neegbeah Reeves on 3/4/15.
+//  Created by Neegbeah Reeves on 3/5/15.
 //
 //
 
-#import "ActivityTableViewController.h"
-#import "Activity.h"
-#import "ActivityCustomCell.h"
+#import "LikesTableViewController.h"
+#import "Likes.h"
+#import "LikesCustomView.h"
 
-@interface ActivityTableViewController (){
-    NSArray *description;
+@interface LikesTableViewController (){
+    NSArray *username;
     NSArray *profilePic;
 }
 
 @end
 
-@implementation ActivityTableViewController
+@implementation LikesTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.activity = [NSMutableArray arrayWithCapacity:5];
-    
-    Activity *act = [[Activity alloc] init];
-    act.description = @"JenSelter is now following you";
-    act.profilePic = @"JenSelterProfilePic.jpg";
-    [self.activity addObject:act];
-    
-    act = [[Activity alloc] init];
-    act.description = @"reevesnick is following 3 people";
-    act.profilePic = @"NeeProfilePic.jpg";
-    [self.activity addObject:act];
-    
-    act = [[Activity alloc] init];
-    act.description = @"reevesnick commented on JenSelter page";
-    act.profilePic = @"NeeProfilePic.jpg";
-    [self.activity addObject:act];
-    
-    act = [[Activity alloc] init];
-    act.description = @"JenSelter is following NikkiBellaWWE";
-    act.profilePic = @"JenSelterProfilePic.jpg";
-    [self.activity addObject:act];
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.likes = [NSMutableArray arrayWithCapacity:10];
+    
+    Likes *lik = [[Likes alloc] init];
+    lik.username = @"JenSelter";
+    lik.profilePic =@"JenSelterProfilePic.jpg";
+    [self.likes addObject:lik];
+    
+    lik = [[Likes alloc] init];
+    lik.username = @"reevesnick";
+    lik.profilePic =@"NeeProfilePic.jpg";
+    [self.likes addObject:lik];
+    
+    lik = [[Likes alloc] init];
+    lik.username = @"GeorgeD";
+    lik.profilePic =@"placeholder.png";
+    [self.likes addObject:lik];
+    
+    lik = [[Likes alloc] init];
+    lik.username = @"TerryCrews";
+    lik.profilePic =@"placeholder.png";
+    [self.likes addObject:lik];
+    
+    lik = [[Likes alloc] init];
+    lik.username = @"JohnCena";
+    lik.profilePic =@"placeholder.png";
+    [self.likes addObject:lik];
+    
+    lik = [[Likes alloc] init];
+    lik.username = @"DanielBryant";
+    lik.profilePic =@"placeholder.png";
+    [self.likes addObject:lik];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,21 +75,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.activity count];
+    return [self.likes count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
     static NSString *CellIdentifier = @"Cell";
-    ActivityCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    LikesCustomView *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Activity *a = (self.activity)[indexPath.row];
-    cell.descriptionLabel.text = a.description;
-    cell.profilePicLabel.image = [UIImage imageNamed:a.profilePic];
-   // cell.yearLabel.text = movie.year;
-    // Configure the cell...
+    Likes *l = (self.likes)[indexPath.row];
+    cell.usernameLabel.text = l.username;
+    cell.profilePicLabel.image = [UIImage imageNamed:l.profilePic];
     
     return cell;
 }
