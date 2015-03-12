@@ -13,5 +13,6 @@
 
 @property (strong,nonatomic)NSString *profilePic;
 @property (strong,nonatomic)NSString *description;
+@property (strong,nonatomic)NSString *date;
 
 @end

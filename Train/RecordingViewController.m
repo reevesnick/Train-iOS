@@ -20,6 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+
+    
     items = [NSArray arrayWithObjects:@"Shoulders",@"Back",@"Chest",@"Arms",@"Core",@"Legs", nil];
     
     [self launchVideoCamera];
@@ -55,11 +58,12 @@
 }
 
 -(void)launchVideoCamera{
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
         picker.allowsEditing = YES;
+        picker.videoMaximumDuration = 8.0f;
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         picker.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, nil];
         
@@ -99,6 +103,13 @@
     return cell;
 }
 
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSIndexPath *oldIndex = [self.tableView indexPathForSelectedRow];
+    [self.tableView cellForRowAtIndexPath:oldIndex].accessoryType = UITableViewCellAccessoryNone;
+    [self.tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    return indexPath;
+}
+
 
 #pragma mark - Image Picker Controller delegate methods
 
@@ -121,6 +132,17 @@
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
+}
+
+#pragma mark - UITextView Delegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
 }
 
 /*

@@ -12,5 +12,5 @@
 
 @synthesize profilePic;
 @synthesize description;
-
+@synthesize  date;
 @end

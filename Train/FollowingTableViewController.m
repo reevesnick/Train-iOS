@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -30,7 +33,7 @@
     Following*fol = [[Following alloc] init];
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = @"";
+    fol.videoFile = @"IMG_1820.m4v";
     fol.description = @"First training on Train";
     fol.profilePic = @"JenSelterProfilePic.jpg";
     [self.following addObject:fol];
@@ -49,14 +52,16 @@
 -(IBAction)likeView:(id)sender{
     UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Likes" bundle:nil];
     UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
-    //initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
+    
 }
+
 
 -(IBAction)commentView:(id)sender{
     UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Comments" bundle:nil];
     UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
-    //initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
 
@@ -85,10 +90,12 @@
     static NSString *CellIdentifier = @"Cell";
     FollowingCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+
+    
     Following *f = (self.following)[indexPath.row];
     cell.usernameLabel.text = f.username;
     cell.dateUploadedLabel.text = f.dateUploaded;
-    //cell.videoFileLabel.image = f.videoFile;
+    cell.videoFileLabel.image = f.videoFile;
     cell.descriptionLabel.text = f.description;
     cell.profilePicLabel.image = [UIImage imageNamed:f.profilePic];
     // cell.yearLabel.text = movie.year;

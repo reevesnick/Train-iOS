@@ -13,5 +13,6 @@
 @synthesize username;
 @synthesize profilePic;
 @synthesize comment;
+@synthesize date;
 
 @end

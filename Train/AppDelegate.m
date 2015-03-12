@@ -46,11 +46,12 @@
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                           
                                                           
-                                                          [UIColor colorWithRed:245.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                          [UIColor colorWithRed:250.0/255.0 green:246.0/255.0 blue:0.0/255.0 alpha:1.0],
                                                           NSForegroundColorAttributeName, shadow,NSShadowAttributeName,
-                                                          [UIFont fontWithName:@"Euphemia UCAS"size:21.0],NSFontAttributeName, nil]];
+                                                          [UIFont fontWithName:@"Futura"size:30],NSFontAttributeName, nil]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
     
     UIBarButtonItem *barButtonAppearance = [UIBarButtonItem appearance];
     [barButtonAppearance setTintColor:[UIColor whiteColor]];

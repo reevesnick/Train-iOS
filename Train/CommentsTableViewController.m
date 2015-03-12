@@ -14,8 +14,8 @@
     NSArray *comments;
     NSArray *username;
     NSArray *profilePic;
+    NSArray *date;
 }
-
 
 @end
 
@@ -28,27 +28,34 @@
     
     Comments *com = [[Comments alloc] init];
     com.username = @"JenSelter";
-    //com.profilePic =@"JenSelterProfilePic.jpg";
+    com.profilePic =@"JenSelterProfilePic.jpg";
+    com.date = @"2m";
     com.comment =@"Awesome Video!";
     [self.comments addObject:com];
     
     com = [[Comments alloc] init];
     com.username = @"reevesnick";
-    //com.profilePic =@"NeeProfilePic.jpg";
+    com.profilePic =@"NeeProfilePic.jpg";
+    com.date = @"5m";
     com.comment = @"Great way to stay in shape!";
     [self.comments addObject:com];
     
     com = [[Comments alloc] init];
     com.username = @"GeorgeD";
-    //com.profilePic =@"placeholder.png";
+    com.profilePic =@"placeholder.png";
+    com.date = @"5h";
     com.comment = @"Really liking this";
     [self.comments addObject:com];
     
     com = [[Comments alloc] init];
     com.username = @"TerryCrews";
-   // com.profilePic =@"placeholder.png";
-    com.comment =@"Great technique";
+    com.profilePic =@"placeholder.png";
+    com.date = @"10h";
+    com.comment =@"Great technique. Keep working at it";
     [self.comments addObject:com];
+    
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+
 
     
 }
@@ -56,6 +63,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)closeAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+    
 }
 
 #pragma mark - Table view data source
@@ -80,8 +92,9 @@
     
     Comments *c = (self.comments)[indexPath.row];
     cell.usernameLabel.text = c.description;
-   // cell.profilePicLabel.image = [UIImage imageNamed:c.profilePic];
+    //cell.profilePicLabel.image = [UIImage imageNamed:c.profilePic];
     cell.commentsLabel.text = c.comment;
+    cell.date.text = c.date;
 
     
     return cell;

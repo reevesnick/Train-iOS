@@ -13,5 +13,6 @@
 @property (strong,nonatomic)NSString *username;
 @property (strong,nonatomic)NSString *profilePic;
 @property (strong,nonatomic)NSString *comment;
+@property (strong,nonatomic)NSString *date;
 
 @end

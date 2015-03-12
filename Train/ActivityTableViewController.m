@@ -22,26 +22,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+
+    
     self.activity = [NSMutableArray arrayWithCapacity:5];
     
     Activity *act = [[Activity alloc] init];
     act.description = @"JenSelter is now following you";
     act.profilePic = @"JenSelterProfilePic.jpg";
+    act.date = @"2m";
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
     act.description = @"reevesnick is following 3 people";
     act.profilePic = @"NeeProfilePic.jpg";
+    act.date = @"5m";
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
     act.description = @"reevesnick commented on JenSelter page";
     act.profilePic = @"NeeProfilePic.jpg";
+    act.date = @"1d";
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
     act.description = @"JenSelter is following NikkiBellaWWE";
     act.profilePic = @"JenSelterProfilePic.jpg";
+    act.date = @"1w";
     [self.activity addObject:act];
     
     
@@ -79,6 +86,7 @@
     Activity *a = (self.activity)[indexPath.row];
     cell.descriptionLabel.text = a.description;
     cell.profilePicLabel.image = [UIImage imageNamed:a.profilePic];
+    cell.dateLabel.text = a.date;
    // cell.yearLabel.text = movie.year;
     // Configure the cell...
     

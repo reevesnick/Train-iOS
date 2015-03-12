@@ -28,6 +28,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+
+    
     self.likes = [NSMutableArray arrayWithCapacity:10];
     
     Likes *lik = [[Likes alloc] init];
@@ -66,6 +69,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)closeAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -32,7 +32,7 @@
 - (void)animationDone:(id)vc{
     UIViewController *dst = (UIViewController*)vc;
     UINavigationController *nav = [[self sourceViewController] navigationController];
-    [nav popViewControllerAnimated:NO];
+    [nav popViewControllerAnimated:YES];
     [nav pushViewController:dst animated:NO];
 }
 

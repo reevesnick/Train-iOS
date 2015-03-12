@@ -11,7 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-@interface RecordingViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface RecordingViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 
 // Image View Properties
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;

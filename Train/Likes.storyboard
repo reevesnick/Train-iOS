@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="b53-3d-kZS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="b53-3d-kZS">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Likes-->
@@ -23,13 +23,14 @@
                                             <rect key="frame" x="44" y="12" width="229" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T8b-M1-AJS">
                                             <rect key="frame" x="283" y="10" width="29" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button">
+                                                <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
@@ -39,6 +40,7 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="profilePicLabel" destination="7nR-U5-2VE" id="7xV-2A-uDq"/>
                                     <outlet property="usernameLabel" destination="BCm-CJ-voQ" id="Fjn-PJ-vOn"/>
@@ -50,7 +52,13 @@
                             <outlet property="delegate" destination="moW-Sl-gXM" id="Tly-5T-KiO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Likes" id="CiZ-UV-i4D"/>
+                    <navigationItem key="navigationItem" title="Likes" id="CiZ-UV-i4D">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ntV-Rc-OqB">
+                            <connections>
+                                <action selector="closeAction:" destination="moW-Sl-gXM" id="3Ps-fc-JZD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9li-2O-31s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
