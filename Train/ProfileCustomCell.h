@@ -1,22 +1,19 @@
 //
-//  FollowingCustomCell.h
+//  ProfileCustomCell.h
 //  Train
 //
-//  Created by Neegbeah Reeves on 3/4/15.
+//  Created by Neegbeah Reeves on 3/12/15.
 //
 //
 
 #import <UIKit/UIKit.h>
-#import <MediaPlayer/MediaPlayer.h>
 
-@interface FollowingCustomCell : UITableViewCell
+@interface ProfileCustomCell : UITableViewCell
 
 @property (weak,nonatomic)IBOutlet UILabel *usernameLabel;
 @property (weak,nonatomic)IBOutlet UIImageView *profilePicLabel;
 @property (weak,nonatomic)IBOutlet UILabel *dateUploadedLabel;
 @property (weak,nonatomic)IBOutlet UIImageView *videoFileLabel;
 @property (weak,nonatomic)IBOutlet UILabel *descriptionLabel;
-
-@property (nonatomic,retain) MPMoviePlayerController *movie;
 
 @end

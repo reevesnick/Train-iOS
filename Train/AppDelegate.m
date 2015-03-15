@@ -48,7 +48,7 @@
                                                           
                                                           [UIColor colorWithRed:250.0/255.0 green:246.0/255.0 blue:0.0/255.0 alpha:1.0],
                                                           NSForegroundColorAttributeName, shadow,NSShadowAttributeName,
-                                                          [UIFont fontWithName:@"Futura"size:30],NSFontAttributeName, nil]];
+                                                          [UIFont fontWithName:@"Futura"size:20],NSFontAttributeName, nil]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     

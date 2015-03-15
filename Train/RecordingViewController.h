@@ -27,5 +27,6 @@
 // Catageory TableView
 
 @property (strong,nonatomic) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) IBOutlet UITextView *textField;
 
 @end

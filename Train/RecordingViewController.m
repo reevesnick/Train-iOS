@@ -16,14 +16,18 @@
     NSArray *items;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    self.view.backgroundColor=[UIColor blackColor];
 
     
     items = [NSArray arrayWithObjects:@"Shoulders",@"Back",@"Chest",@"Arms",@"Core",@"Legs", nil];
+    
+    
+
     
     [self launchVideoCamera];
 }
@@ -142,6 +146,12 @@
         return NO;
     }
     
+    return YES;
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
     return YES;
 }
 

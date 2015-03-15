@@ -9,8 +9,14 @@
 #import "FollowingTableViewController.h"
 #import "Following.h"
 #import "FollowingCustomCell.h"
+#import "PBJVideoPlayerController.h"
 
-@interface FollowingTableViewController ()
+
+
+@interface FollowingTableViewController () <PBJVideoPlayerControllerDelegate>{
+    PBJVideoPlayerController * _videoPlayerController;
+    UIImageView *_playButton;
+}
 
 @end
 
@@ -19,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    
 
     
     // Uncomment the following line to preserve selection between presentations.
@@ -33,7 +39,7 @@
     Following*fol = [[Following alloc] init];
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = @"IMG_1820.m4v";
+    fol.videoFile = @"arm_workout.png";
     fol.description = @"First training on Train";
     fol.profilePic = @"JenSelterProfilePic.jpg";
     [self.following addObject:fol];
@@ -41,7 +47,7 @@
     fol = [[Following alloc] init];
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = @"";
+    fol.videoFile = @"Leg workout.png";
     fol.description = @"First training on Train";
     fol.profilePic = @"JenSelterProfilePic.jpg";
     [self.following addObject:fol];
@@ -70,6 +76,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - PBJVideoPlayerControllerDelegate
+
+- (void)videoPlayerReady:(PBJVideoPlayerController *)videoPlayer
+{
+    //NSLog(@"Max duration of the video: %f", videoPlayer.maxDuration);
+}
+
+- (void)videoPlayerPlaybackStateDidChange:(PBJVideoPlayerController *)videoPlayer
+{
+}
+
+- (void)videoPlayerPlaybackWillStartFromBeginning:(PBJVideoPlayerController *)videoPlayer
+{
+    _playButton.alpha = 1.0f;
+    _playButton.hidden = NO;
+    
+    [UIView animateWithDuration:0.1f animations:^{
+        _playButton.alpha = 0.0f;
+    } completion:^(BOOL finished) {
+        _playButton.hidden = YES;
+    }];
+}
+
+- (void)videoPlayerPlaybackDidEnd:(PBJVideoPlayerController *)videoPlayer
+{
+    _playButton.hidden = NO;
+    
+    [UIView animateWithDuration:0.1f animations:^{
+        _playButton.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+    }];
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -90,12 +131,12 @@
     static NSString *CellIdentifier = @"Cell";
     FollowingCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-
+    
     
     Following *f = (self.following)[indexPath.row];
     cell.usernameLabel.text = f.username;
     cell.dateUploadedLabel.text = f.dateUploaded;
-    cell.videoFileLabel.image = f.videoFile;
+    cell.videoFileLabel.image = [UIImage imageNamed:f.videoFile];
     cell.descriptionLabel.text = f.description;
     cell.profilePicLabel.image = [UIImage imageNamed:f.profilePic];
     // cell.yearLabel.text = movie.year;
@@ -125,6 +166,8 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+
+
 
 
 /*

@@ -10,6 +10,20 @@
 
 @implementation FollowingCustomCell
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.movie = [[MPMoviePlayerController alloc] init];
+        self.movie.controlStyle = MPMovieControlStyleNone;
+        self.movie.scalingMode = MPMovieScalingModeAspectFit;
+        [self.contentView addSubview:self.movie.view];
+    }
+    return self;
+}
+- (void)layoutSubviews {
+    [super layoutSubviews];
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }
