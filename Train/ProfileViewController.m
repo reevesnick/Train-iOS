@@ -31,16 +31,18 @@
     pro.username = @"reevesnick";
     pro.dateUploaded = @"20 min";
     pro.videoFile = @"back workout.png";
-    pro.description = @"First training on Train";
+    pro.description = @"Back Workout";
     pro.profilePic = @"NeeProfilePic.jpg";
+    pro.usernameCom = @"reevesnick";
     [self.profile addObject:pro];
     
     pro = [[Profile alloc] init];
     pro.username = @"reevesnick";
     pro.dateUploaded = @"20 min";
     pro.videoFile = @"Chest workout.png";
-    pro.description = @"First training on Train";
+    pro.description = @"3 Sets of Chests";
     pro.profilePic = @"NeeProfilePic.jpg";
+    pro.usernameCom = @"reevesnick";
     [self.profile addObject:pro];
 }
 
@@ -63,6 +65,26 @@
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
 
+-(IBAction)editProfile:(id)sender{
+    UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"EditProfile" bundle:nil];
+    UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
+    initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentModalViewController:initialSettingsVC animated:YES];
+}
+
+-(IBAction)goToSettings{
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Settings" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Log Out" otherButtonTitles:nil, nil];
+    [actionSheet showInView:self.view];
+    
+}
+
+-(IBAction)reportUser{
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Settings" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Report User" otherButtonTitles:nil, nil];
+    [actionSheet showInView:self.view];
+    
+}
 
 #pragma mark - Table view data source
 
@@ -92,6 +114,7 @@
     cell.videoFileLabel.image = [UIImage imageNamed:p.videoFile];
     cell.descriptionLabel.text = p.description;
     cell.profilePicLabel.image = [UIImage imageNamed:p.profilePic];
+    cell.usernameComLabel.text = p.usernameCom;
     // cell.yearLabel.text = movie.year;
     
     return cell;

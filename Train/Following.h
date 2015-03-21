@@ -16,6 +16,8 @@
 @property (strong,nonatomic)NSString *dateUploaded;
 @property (strong,nonatomic)NSString *videoFile;
 @property (strong,nonatomic)NSString *description;
+@property (strong,nonatomic)NSString *usernameCom;
+
 
 
 

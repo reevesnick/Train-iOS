@@ -9,14 +9,10 @@
 #import "FollowingTableViewController.h"
 #import "Following.h"
 #import "FollowingCustomCell.h"
-#import "PBJVideoPlayerController.h"
 
 
 
-@interface FollowingTableViewController () <PBJVideoPlayerControllerDelegate>{
-    PBJVideoPlayerController * _videoPlayerController;
-    UIImageView *_playButton;
-}
+@interface FollowingTableViewController ()
 
 @end
 
@@ -40,8 +36,9 @@
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
     fol.videoFile = @"arm_workout.png";
-    fol.description = @"First training on Train";
+    fol.description = @"3 sets of 10";
     fol.profilePic = @"JenSelterProfilePic.jpg";
+    fol.usernameCom = @"JenSelter";
     [self.following addObject:fol];
     
     fol = [[Following alloc] init];
@@ -50,14 +47,15 @@
     fol.videoFile = @"Leg workout.png";
     fol.description = @"First training on Train";
     fol.profilePic = @"JenSelterProfilePic.jpg";
+    fol.usernameCom = @"JenSelter";
     [self.following addObject:fol];
  
 
 }
 
 -(IBAction)likeView:(id)sender{
-    UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Likes" bundle:nil];
-    UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
+    UIStoryboard *likeStoryboard = [UIStoryboard storyboardWithName:@"Likes" bundle:nil];
+    UIViewController *initialSettingsVC = [likeStoryboard instantiateInitialViewController];
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
     
@@ -65,8 +63,8 @@
 
 
 -(IBAction)commentView:(id)sender{
-    UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Comments" bundle:nil];
-    UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
+    UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"Comments" bundle:nil];
+    UIViewController *initialSettingsVC = [commentsStoryboard instantiateInitialViewController];
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
@@ -77,38 +75,6 @@
 }
 
 
-#pragma mark - PBJVideoPlayerControllerDelegate
-
-- (void)videoPlayerReady:(PBJVideoPlayerController *)videoPlayer
-{
-    //NSLog(@"Max duration of the video: %f", videoPlayer.maxDuration);
-}
-
-- (void)videoPlayerPlaybackStateDidChange:(PBJVideoPlayerController *)videoPlayer
-{
-}
-
-- (void)videoPlayerPlaybackWillStartFromBeginning:(PBJVideoPlayerController *)videoPlayer
-{
-    _playButton.alpha = 1.0f;
-    _playButton.hidden = NO;
-    
-    [UIView animateWithDuration:0.1f animations:^{
-        _playButton.alpha = 0.0f;
-    } completion:^(BOOL finished) {
-        _playButton.hidden = YES;
-    }];
-}
-
-- (void)videoPlayerPlaybackDidEnd:(PBJVideoPlayerController *)videoPlayer
-{
-    _playButton.hidden = NO;
-    
-    [UIView animateWithDuration:0.1f animations:^{
-        _playButton.alpha = 1.0f;
-    } completion:^(BOOL finished) {
-    }];
-}
 
 
 #pragma mark - Table view data source
@@ -139,6 +105,7 @@
     cell.videoFileLabel.image = [UIImage imageNamed:f.videoFile];
     cell.descriptionLabel.text = f.description;
     cell.profilePicLabel.image = [UIImage imageNamed:f.profilePic];
+    cell.usernameComLabel.text = f.usernameCom;
     // cell.yearLabel.text = movie.year;
     
     return cell;

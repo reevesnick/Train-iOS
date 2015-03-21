@@ -34,22 +34,35 @@
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
-    act.description = @"reevesnick is following 3 people";
+    act.description = @"reevesnick commented in your workout";
     act.profilePic = @"NeeProfilePic.jpg";
     act.date = @"5m";
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
-    act.description = @"reevesnick commented on JenSelter page";
+    act.description = @"reevesnick mentioned you in a comment";
     act.profilePic = @"NeeProfilePic.jpg";
     act.date = @"1d";
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
-    act.description = @"JenSelter is following NikkiBellaWWE";
+    act.description = @"JenSelter liked your workout";
     act.profilePic = @"JenSelterProfilePic.jpg";
     act.date = @"1w";
     [self.activity addObject:act];
+    
+    act = [[Activity alloc] init];
+    act.description = @"BigbootyJudy is now following you";
+    act.profilePic = @"JenSelterProfilePic.jpg";
+    act.date = @"1w";
+    [self.activity addObject:act];
+    
+    act = [[Activity alloc] init];
+    act.description = @"JenSelter commented on your workout";
+    act.profilePic = @"JenSelterProfilePic.jpg";
+    act.date = @"1w";
+    [self.activity addObject:act];
+    
     
     
     // Uncomment the following line to preserve selection between presentations.

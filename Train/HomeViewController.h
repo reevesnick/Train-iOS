@@ -10,8 +10,11 @@
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
 
-@interface HomeViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface HomeViewController : UIViewController 
 
-//@property (strong,nonatomic) IBOoutlet UITableView *catagoriesTableView;
+
+
+
 
 @end
+

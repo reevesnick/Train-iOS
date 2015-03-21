@@ -15,5 +15,7 @@
 @property (weak,nonatomic)IBOutlet UILabel *dateUploadedLabel;
 @property (weak,nonatomic)IBOutlet UIImageView *videoFileLabel;
 @property (weak,nonatomic)IBOutlet UILabel *descriptionLabel;
+@property (weak,nonatomic)IBOutlet UILabel *usernameComLabel;
+
 
 @end

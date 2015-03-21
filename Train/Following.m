@@ -15,6 +15,8 @@
 @synthesize videoFile;
 @synthesize dateUploaded;
 @synthesize profilePic;
+@synthesize usernameCom;
+
 //@synthesize likeCount;
 
 

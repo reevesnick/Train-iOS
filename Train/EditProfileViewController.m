@@ -24,6 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)closeAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
 /*
 #pragma mark - Navigation
 

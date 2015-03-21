@@ -10,4 +10,10 @@
 
 @implementation HomeData
 
+@synthesize username;
+@synthesize description;
+@synthesize videoFile;
+@synthesize dateUploaded;
+@synthesize profilePic;
+
 @end

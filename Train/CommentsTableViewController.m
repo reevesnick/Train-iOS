@@ -100,6 +100,29 @@
     return cell;
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    // add toolbar above keyboard
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
+    toolBar.barStyle = UIBarStyleBlackTranslucent;
+    
+    // done button
+    UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Fechar"
+                                                             style:UIBarButtonItemStyleBordered
+                                                            target:self action:@selector(closeKeyboard)];
+    
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                           target:nil
+                                                                           action:nil];
+    
+    toolBar.items = [NSArray arrayWithObjects:space, done, nil];
+
+    textField.inputAccessoryView = toolBar;
+    
+    
+}
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -11,7 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-@interface ProfileViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,UIScrollViewAccessibilityDelegate,UIScrollViewDelegate>
+@interface ProfileViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,UIScrollViewAccessibilityDelegate,UIScrollViewDelegate,UIActionSheetDelegate>
 
 @property (nonatomic, strong) NSMutableArray *profile;
 @property (strong,nonatomic) IBOutlet UIScrollView * scroller;

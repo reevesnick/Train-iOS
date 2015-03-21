@@ -12,6 +12,8 @@
 	<dict>
 		<key>B88B3EE197C43FA42D93723B80DB2748C627FE96</key>
 		<string>https://github.com/reevesnick/Train-iOS.git</string>
+		<key>D1F5D51F31D3E82491829D69AAA08793F5C10392</key>
+		<string>https://github.com/sberrevoets/SDCSegmentedViewController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Train.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>B88B3EE197C43FA42D93723B80DB2748C627FE96</key>
 		<string>../..</string>
+		<key>D1F5D51F31D3E82491829D69AAA08793F5C10392</key>
+		<string>../../../SDCSegmentedViewController</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/reevesnick/Train-iOS.git</string>
@@ -28,6 +32,14 @@
 	<string>B88B3EE197C43FA42D93723B80DB2748C627FE96</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1F5D51F31D3E82491829D69AAA08793F5C10392</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SDCSegmentedViewController</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
