@@ -34,7 +34,7 @@
     [self.activity addObject:act];
     
     act = [[Activity alloc] init];
-    act.description = @"reevesnick commented in your workout";
+    act.description = @"reevesnick commented on your workout";
     act.profilePic = @"NeeProfilePic.jpg";
     act.date = @"5m";
     [self.activity addObject:act];

@@ -59,7 +59,8 @@
     
     [[UITabBar appearance]setBarTintColor:[UIColor blackColor]];
     
- 
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor yellowColor]];
+
 
 
     

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditProfileViewController : UIViewController
+@interface EditProfileViewController : UIViewController <UITextFieldDelegate,UITextViewDelegate>
+
+@property (weak,nonatomic) IBOutlet UITextField *textField;
+@property (weak,nonatomic) IBOutlet UITextView *textView;
+
 
 @end

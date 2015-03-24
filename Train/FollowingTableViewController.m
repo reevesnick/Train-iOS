@@ -61,6 +61,18 @@
     
 }
 
+-(IBAction)likeSelected:(id)sender{
+    UIButton *button = (UIButton *)sender;
+    if (!button.selected) {
+        button.backgroundColor = [UIColor yellowColor];
+        button.selected = YES;
+    }
+    else{
+        button.backgroundColor = [UIColor grayColor];
+        button.selected = NO;
+    }
+}
+
 
 -(IBAction)commentView:(id)sender{
     UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"Comments" bundle:nil];

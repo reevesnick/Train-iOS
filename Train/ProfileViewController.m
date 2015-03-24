@@ -72,6 +72,18 @@
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
 
+-(IBAction)likeSelected:(id)sender{
+    UIButton *button = (UIButton *)sender;
+    if (!button.selected) {
+        button.backgroundColor = [UIColor yellowColor];
+        button.selected = YES;
+    }
+    else{
+        button.backgroundColor = [UIColor grayColor];
+        button.selected = NO;
+    }
+}
+
 -(IBAction)goToSettings{
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Settings" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Log Out" otherButtonTitles:nil, nil];
