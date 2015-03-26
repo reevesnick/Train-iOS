@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "Profile.h"
 #import "ProfileCustomCell.h"
+#import "UIImage+animatedGIF.h"
 
 @interface ProfileViewController (){
     
@@ -30,7 +31,7 @@
     Profile*pro = [[Profile alloc] init];
     pro.username = @"reevesnick";
     pro.dateUploaded = @"20 min";
-    pro.videoFile = @"back workout.png";
+    pro.videoFile = [[NSBundle mainBundle] URLForResource:@"guyworkout" withExtension:@"gif"];;
     pro.description = @"Back Workout";
     pro.profilePic = @"NeeProfilePic.jpg";
     pro.usernameCom = @"reevesnick";
@@ -39,7 +40,7 @@
     pro = [[Profile alloc] init];
     pro.username = @"reevesnick";
     pro.dateUploaded = @"20 min";
-    pro.videoFile = @"Chest workout.png";
+    pro.videoFile = [[NSBundle mainBundle] URLForResource:@"guyworkout" withExtension:@"gif"];;
     pro.description = @"3 Sets of Chests";
     pro.profilePic = @"NeeProfilePic.jpg";
     pro.usernameCom = @"reevesnick";
@@ -79,7 +80,7 @@
         button.selected = YES;
     }
     else{
-        button.backgroundColor = [UIColor grayColor];
+        button.backgroundColor = [UIColor colorWithRed:66.0/255.0 green:69.0/255.0 blue:67.0/255.0 alpha:1.0];
         button.selected = NO;
     }
 }
@@ -97,6 +98,12 @@
     [actionSheet showInView:self.view];
     
 }
+
+- (IBAction)closeAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
 
 #pragma mark - Table view data source
 
@@ -123,7 +130,7 @@
     Profile *p = (self.profile)[indexPath.row];
     cell.usernameLabel.text = p.username;
     cell.dateUploadedLabel.text = p.dateUploaded;
-    cell.videoFileLabel.image = [UIImage imageNamed:p.videoFile];
+    cell.videoFileLabel.image = [UIImage animatedImageWithAnimatedGIFURL:p.videoFile];
     cell.descriptionLabel.text = p.description;
     cell.profilePicLabel.image = [UIImage imageNamed:p.profilePic];
     cell.usernameComLabel.text = p.usernameCom;

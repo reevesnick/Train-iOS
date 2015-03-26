@@ -10,6 +10,7 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "UIImage+animatedGIF.h"
 
 @interface FollowingTableViewController : UITableViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 

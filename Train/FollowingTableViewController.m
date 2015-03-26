@@ -9,6 +9,7 @@
 #import "FollowingTableViewController.h"
 #import "Following.h"
 #import "FollowingCustomCell.h"
+#import "UIImage+animatedGIF.h"
 
 
 
@@ -21,8 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-
+    self.navigationItem.hidesBackButton = TRUE;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -35,7 +35,7 @@
     Following*fol = [[Following alloc] init];
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = @"arm_workout.png";
+    fol.videoFile = [[NSBundle mainBundle] URLForResource:@"girlworkout2" withExtension:@"gif"];
     fol.description = @"3 sets of 10";
     fol.profilePic = @"JenSelterProfilePic.jpg";
     fol.usernameCom = @"JenSelter";
@@ -44,7 +44,7 @@
     fol = [[Following alloc] init];
     fol.username = @"JenSelter";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = @"Leg workout.png";
+    fol.videoFile = [[NSBundle mainBundle] URLForResource:@"girlworkout2" withExtension:@"gif"];
     fol.description = @"First training on Train";
     fol.profilePic = @"JenSelterProfilePic.jpg";
     fol.usernameCom = @"JenSelter";
@@ -68,7 +68,7 @@
         button.selected = YES;
     }
     else{
-        button.backgroundColor = [UIColor grayColor];
+        button.backgroundColor = [UIColor colorWithRed:66.0/255.0 green:69.0/255.0 blue:67.0/255.0 alpha:1.0];
         button.selected = NO;
     }
 }
@@ -76,6 +76,13 @@
 
 -(IBAction)commentView:(id)sender{
     UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"Comments" bundle:nil];
+    UIViewController *initialSettingsVC = [commentsStoryboard instantiateInitialViewController];
+    initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentModalViewController:initialSettingsVC animated:YES];
+}
+
+-(IBAction)profile:(id)sender{
+    UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"UserProfile" bundle:nil];
     UIViewController *initialSettingsVC = [commentsStoryboard instantiateInitialViewController];
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
@@ -114,7 +121,7 @@
     Following *f = (self.following)[indexPath.row];
     cell.usernameLabel.text = f.username;
     cell.dateUploadedLabel.text = f.dateUploaded;
-    cell.videoFileLabel.image = [UIImage imageNamed:f.videoFile];
+    cell.videoFileLabel.image = [UIImage animatedImageWithAnimatedGIFURL:f.videoFile];
     cell.descriptionLabel.text = f.description;
     cell.profilePicLabel.image = [UIImage imageNamed:f.profilePic];
     cell.usernameComLabel.text = f.usernameCom;

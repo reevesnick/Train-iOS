@@ -14,9 +14,10 @@
 @property (strong,nonatomic)NSString *username;
 @property (strong,nonatomic)NSString *profilePic;
 @property (strong,nonatomic)NSString *dateUploaded;
-@property (strong,nonatomic)NSString *videoFile;
+@property (strong,nonatomic)NSURL *videoFile;
 @property (strong,nonatomic)NSString *description;
 @property (strong,nonatomic)NSString *usernameCom;
+@property (strong,nonatomic)NSString *web;
 
 
 

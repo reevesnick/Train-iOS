@@ -66,6 +66,12 @@
 		D197D61B1ABD0BE000149420 /* SDCEmbeddedSegmentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D197D6181ABD0BE000149420 /* SDCEmbeddedSegmentSegue.m */; };
 		D197D61C1ABD0BE000149420 /* SDCSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D197D61A1ABD0BE000149420 /* SDCSegmentedViewController.m */; };
 		D197D61F1ABD214300149420 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D197D61E1ABD214300149420 /* EditProfileViewController.m */; };
+		D19C1D8C1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif in Resources */ = {isa = PBXBuildFile; fileRef = D19C1D8B1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif */; };
+		D19C1D8F1AC238B400917160 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D19C1D8E1AC238B400917160 /* UIImage+animatedGIF.m */; };
+		D19C1D911AC238E200917160 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19C1D901AC238E200917160 /* ImageIO.framework */; };
+		D19C1D941AC23EFE00917160 /* girlworkout.gif in Resources */ = {isa = PBXBuildFile; fileRef = D19C1D921AC23EFE00917160 /* girlworkout.gif */; };
+		D19C1D951AC23EFE00917160 /* girlworkout2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D19C1D931AC23EFE00917160 /* girlworkout2.gif */; };
+		D19C1D971AC240BF00917160 /* guyworkout.gif in Resources */ = {isa = PBXBuildFile; fileRef = D19C1D961AC240BF00917160 /* guyworkout.gif */; };
 		D19D53701A63383200FCAE61 /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19D536F1A63383200FCAE61 /* RecordingViewController.m */; };
 		D19D538D1A633A1A00FCAE61 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D538C1A633A1A00FCAE61 /* AVFoundation.framework */; };
 		D19D538F1A633A1F00FCAE61 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D538E1A633A1F00FCAE61 /* AVKit.framework */; };
@@ -89,12 +95,6 @@
 		D1CF80321AA8BD28008D6138 /* CommentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80311AA8BD28008D6138 /* CommentsTableViewController.m */; };
 		D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D1C2081A968E8D00C3FB2C /* Activity.m */; };
 		D1D4C1DB1A77E10300AA9574 /* Following.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D4C1DA1A77E10300AA9574 /* Following.m */; };
-		D1E13A7C1AB140E200A3A951 /* IMG_1820.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A761AB140E200A3A951 /* IMG_1820.m4v */; };
-		D1E13A7D1AB140E200A3A951 /* IMG_1821.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A771AB140E200A3A951 /* IMG_1821.m4v */; };
-		D1E13A7E1AB140E200A3A951 /* IMG_1824.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A781AB140E200A3A951 /* IMG_1824.m4v */; };
-		D1E13A7F1AB140E200A3A951 /* IMG_1825.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A791AB140E200A3A951 /* IMG_1825.m4v */; };
-		D1E13A801AB140E200A3A951 /* IMG_1828.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A7A1AB140E200A3A951 /* IMG_1828.m4v */; };
-		D1E13A811AB140E200A3A951 /* IMG_1829.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A7B1AB140E200A3A951 /* IMG_1829.m4v */; };
 		D1E13A851AB148A900A3A951 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E13A841AB148A900A3A951 /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +183,13 @@
 		D197D61A1ABD0BE000149420 /* SDCSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCSegmentedViewController.m; sourceTree = "<group>"; };
 		D197D61D1ABD214300149420 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		D197D61E1ABD214300149420 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		D19C1D8B1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "celebrity-gifs-brad-pitt-workout.gif"; path = "Assets/DummyVideo/celebrity-gifs-brad-pitt-workout.gif"; sourceTree = SOURCE_ROOT; };
+		D19C1D8D1AC238B400917160 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = SOURCE_ROOT; };
+		D19C1D8E1AC238B400917160 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = SOURCE_ROOT; };
+		D19C1D901AC238E200917160 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D19C1D921AC23EFE00917160 /* girlworkout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = girlworkout.gif; sourceTree = "<group>"; };
+		D19C1D931AC23EFE00917160 /* girlworkout2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = girlworkout2.gif; sourceTree = "<group>"; };
+		D19C1D961AC240BF00917160 /* guyworkout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = guyworkout.gif; sourceTree = "<group>"; };
 		D19D536E1A63383200FCAE61 /* RecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
 		D19D536F1A63383200FCAE61 /* RecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingViewController.m; sourceTree = "<group>"; };
 		D19D538C1A633A1A00FCAE61 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -219,12 +226,6 @@
 		D1D1C2081A968E8D00C3FB2C /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 		D1D4C1D91A77E10300AA9574 /* Following.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Following.h; sourceTree = "<group>"; };
 		D1D4C1DA1A77E10300AA9574 /* Following.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Following.m; sourceTree = "<group>"; };
-		D1E13A761AB140E200A3A951 /* IMG_1820.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1820.m4v; sourceTree = "<group>"; };
-		D1E13A771AB140E200A3A951 /* IMG_1821.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1821.m4v; sourceTree = "<group>"; };
-		D1E13A781AB140E200A3A951 /* IMG_1824.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1824.m4v; sourceTree = "<group>"; };
-		D1E13A791AB140E200A3A951 /* IMG_1825.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1825.m4v; sourceTree = "<group>"; };
-		D1E13A7A1AB140E200A3A951 /* IMG_1828.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1828.m4v; sourceTree = "<group>"; };
-		D1E13A7B1AB140E200A3A951 /* IMG_1829.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1829.m4v; sourceTree = "<group>"; };
 		D1E13A841AB148A900A3A951 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19C1D911AC238E200917160 /* ImageIO.framework in Frameworks */,
 				D18858331A8415FC00CC2B56 /* Accounts.framework in Frameworks */,
 				D18858311A8415C300CC2B56 /* Social.framework in Frameworks */,
 				D188582F1A8415B900CC2B56 /* Twitter.framework in Frameworks */,
@@ -374,6 +376,7 @@
 		D18CAF8A1A5F4D4900CEDA9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D19C1D901AC238E200917160 /* ImageIO.framework */,
 				D18858341A8418E600CC2B56 /* FacebookSDK.framework */,
 				D18858321A8415FC00CC2B56 /* Accounts.framework */,
 				D18858301A8415C300CC2B56 /* Social.framework */,
@@ -426,6 +429,8 @@
 		D19D53521A63370A00FCAE61 /* API-Thrid Party Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D19C1D8D1AC238B400917160 /* UIImage+animatedGIF.h */,
+				D19C1D8E1AC238B400917160 /* UIImage+animatedGIF.m */,
 				D197D6161ABD0BE000149420 /* Source */,
 			);
 			name = "API-Thrid Party Libraries";
@@ -498,18 +503,15 @@
 		D1E13A751AB140E200A3A951 /* DummyVideo */ = {
 			isa = PBXGroup;
 			children = (
+				D19C1D961AC240BF00917160 /* guyworkout.gif */,
+				D19C1D921AC23EFE00917160 /* girlworkout.gif */,
+				D19C1D931AC23EFE00917160 /* girlworkout2.gif */,
 				D14535371AB2845900EB0B80 /* Leg workout.png */,
 				D14535381AB2845900EB0B80 /* Shoulder workout.png */,
 				D145352F1AB2845100EB0B80 /* arm_workout.png */,
 				D14535301AB2845100EB0B80 /* back workout.png */,
 				D14535311AB2845100EB0B80 /* Chest workout.png */,
 				D14535321AB2845100EB0B80 /* core workout.png */,
-				D1E13A761AB140E200A3A951 /* IMG_1820.m4v */,
-				D1E13A771AB140E200A3A951 /* IMG_1821.m4v */,
-				D1E13A781AB140E200A3A951 /* IMG_1824.m4v */,
-				D1E13A791AB140E200A3A951 /* IMG_1825.m4v */,
-				D1E13A7A1AB140E200A3A951 /* IMG_1828.m4v */,
-				D1E13A7B1AB140E200A3A951 /* IMG_1829.m4v */,
 			);
 			name = DummyVideo;
 			path = Assets/DummyVideo;
@@ -542,6 +544,7 @@
 		D1EA98B01A967FD1005B0FB3 /* Train Icon */ = {
 			isa = PBXGroup;
 			children = (
+				D19C1D8B1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif */,
 				D17F9ACA1AB282C50051812A /* video icon-1.png */,
 				D17F9ACB1AB282C50051812A /* video icon-2.png */,
 				D17F9AC61AB282BA0051812A /* trainers-1.png */,
@@ -646,12 +649,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17F9AC91AB282BA0051812A /* trainers-2.png in Resources */,
-				D1E13A801AB140E200A3A951 /* IMG_1828.m4v in Resources */,
 				D197D5EA1ABCCDDB00149420 /* EditProfile.storyboard in Resources */,
 				D14535391AB2845900EB0B80 /* Leg workout.png in Resources */,
 				D14D0A6B1AB2985E0025B1B2 /* background@2x.png in Resources */,
-				D1E13A811AB140E200A3A951 /* IMG_1829.m4v in Resources */,
-				D1E13A7E1AB140E200A3A951 /* IMG_1824.m4v in Resources */,
 				D17F9AC51AB282AD0051812A /* train-2.png in Resources */,
 				D13754B71A5DA373001D0E9E /* Main.storyboard in Resources */,
 				D17F9AC01AB2829A0051812A /* profile-1-1.png in Resources */,
@@ -660,6 +660,7 @@
 				D14535331AB2845100EB0B80 /* arm_workout.png in Resources */,
 				D14D0A681AB2985E0025B1B2 /* background-667h@2x.png in Resources */,
 				D1CF80071AA7D279008D6138 /* JenSelterProfilePic.jpg in Resources */,
+				D19C1D951AC23EFE00917160 /* girlworkout2.gif in Resources */,
 				D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */,
 				D17F9AC11AB2829A0051812A /* profile-1-2.png in Resources */,
 				D13754B91A5DA373001D0E9E /* Images.xcassets in Resources */,
@@ -667,19 +668,19 @@
 				D17F9ABD1AB2828A0051812A /* home156-2-2.png in Resources */,
 				D14535341AB2845100EB0B80 /* back workout.png in Resources */,
 				D14D0A6A1AB2985E0025B1B2 /* background.png in Resources */,
+				D19C1D971AC240BF00917160 /* guyworkout.gif in Resources */,
 				D197D5E81ABCCBA900149420 /* UserProfile.storyboard in Resources */,
+				D19C1D8C1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif in Resources */,
 				D1CF80081AA7D279008D6138 /* NeeProfilePic.jpg in Resources */,
 				D14535351AB2845100EB0B80 /* Chest workout.png in Resources */,
-				D1E13A7D1AB140E200A3A951 /* IMG_1821.m4v in Resources */,
 				D17F9AC81AB282BA0051812A /* trainers-1.png in Resources */,
 				D17F9ACC1AB282C50051812A /* video icon-1.png in Resources */,
-				D1E13A7C1AB140E200A3A951 /* IMG_1820.m4v in Resources */,
-				D1E13A7F1AB140E200A3A951 /* IMG_1825.m4v in Resources */,
 				D14535361AB2845100EB0B80 /* core workout.png in Resources */,
 				D14D0A671AB2985E0025B1B2 /* background-568h@2x.png in Resources */,
 				D1E13A851AB148A900A3A951 /* Search.storyboard in Resources */,
 				D1CF801D1AA7EC93008D6138 /* Likes.storyboard in Resources */,
 				D17F9ACD1AB282C50051812A /* video icon-2.png in Resources */,
+				D19C1D941AC23EFE00917160 /* girlworkout.gif in Resources */,
 				D17F9ABC1AB2828A0051812A /* home156-2-1.png in Resources */,
 				D17F9AC41AB282AD0051812A /* train-1.png in Resources */,
 			);
@@ -721,6 +722,7 @@
 				D14535431AB285C000EB0B80 /* ProfileViewController.m in Sources */,
 				D187D2B11A9FE86100307F57 /* TrainCatagoriesSeque.m in Sources */,
 				D145353D1AB2854800EB0B80 /* Profile.m in Sources */,
+				D19C1D8F1AC238B400917160 /* UIImage+animatedGIF.m in Sources */,
 				D197D5F01ABCF0AB00149420 /* HomeCustomCell.m in Sources */,
 				D1CF80261AA8B459008D6138 /* LikesTableViewController.m in Sources */,
 				D188582D1A8413A400CC2B56 /* HomeViewController.m in Sources */,
