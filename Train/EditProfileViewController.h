@@ -12,6 +12,9 @@
 
 @property (weak,nonatomic) IBOutlet UITextField *textField;
 @property (weak,nonatomic) IBOutlet UITextView *textView;
+@property (weak,nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak,nonatomic) IBOutlet UITextField *textFieldTwo;
+
 
 
 @end

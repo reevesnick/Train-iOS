@@ -17,9 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //Scrool View
+    [self.scrollView setScrollEnabled:YES];
+    [self.scrollView setContentSize:(CGSizeMake(320, 670))];
+    
     _textField.delegate = self;
     _textView.delegate = self;
     
+    self.textView.layer.borderWidth = 2.0f;
+    self.textView.layer.borderColor = [[UIColor blackColor] CGColor];
+    self.textView.layer.cornerRadius = 8;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,9 +51,11 @@
     return YES;
 }
 
+
+
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
-    
-    [_textField resignFirstResponder];
+    [self.view endEditing:YES];
+
     return YES;
 }
 

@@ -15,14 +15,37 @@
     NSArray *username;
     NSArray *profilePic;
     NSArray *date;
+    UIRefreshControl *refreshControl;
+
 }
 
 @end
 
 @implementation CommentsTableViewController
 
+@synthesize textField,toolbar;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // UIRefreshController
+    refreshControl = [[UIRefreshControl alloc]init];
+    [self.tableView addSubview:refreshControl];
+    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+
+    
+    //textField.delegate = self;
+    //toolbar.delegate =self;
+    // UIToobar pupup keyboard
+    
+    textField.inputAccessoryView = toolbar;
+    
+    // where masterTextField is the textField is the one you tap, and the keyboard rises up along with the small textField.
+    
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    [textField setKeyboardType:UIKeyboardTypeDefault];
+    
     
     self.comments = [NSMutableArray arrayWithCapacity:10];
     
@@ -91,8 +114,8 @@
     CommentsCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Comments *c = (self.comments)[indexPath.row];
-    cell.usernameLabel.text = c.description;
-    //cell.profilePicLabel.image = [UIImage imageNamed:c.profilePic];
+    cell.usernameLabel.text = c.username;
+    cell.profilePicLabel.image = [UIImage imageNamed:c.profilePic];
     cell.commentsLabel.text = c.comment;
     cell.date.text = c.date;
 
@@ -104,7 +127,7 @@
 {
     
     // add toolbar above keyboard
-    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0, 100.0, 320.0, 44.0)];
     toolBar.barStyle = UIBarStyleBlackTranslucent;
     
     // done button
@@ -120,7 +143,14 @@
 
     textField.inputAccessoryView = toolBar;
     
+  
+}
+
+-(BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     
+   // textView.inputAccessoryView = toolbar;
+    
+    return YES;
 }
 
 

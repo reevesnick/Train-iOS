@@ -13,8 +13,9 @@
 @property (nonatomic, strong) NSMutableArray *comments;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (weak,nonatomic)IBOutlet UITextField *textField;
-
+@property (strong,nonatomic)IBOutlet UITextField *textField;
+@property (weak,nonatomic)IBOutlet UIScrollView *scrollView;
+@property (strong,nonatomic)IBOutlet UIToolbar *toolbar;
 
 
 @end

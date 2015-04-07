@@ -27,6 +27,9 @@
     items = [NSArray arrayWithObjects:@"Shoulders",@"Back",@"Chest",@"Arms",@"Core",@"Legs", nil];
     
     
+    self.textField.layer.borderWidth = 1.0f;
+    self.textField.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.textField.layer.cornerRadius = 8;
 
     
     [self launchVideoCamera];
@@ -127,6 +130,7 @@
     [self.videoController setContentURL:self.videoURL];
     [self.videoController.view setFrame:CGRectMake(0, 64, 90, 90)];
     [self.view addSubview:self.videoController.view];
+    self.videoController.controlStyle = MPMovieControlStyleNone;
     
     [self.videoController play];
     
@@ -147,6 +151,10 @@
     }
     
     return YES;
+}
+
+- (void) textViewDidBeginEditing:(UITextView *) textView {
+    [textView setText:@""];
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{

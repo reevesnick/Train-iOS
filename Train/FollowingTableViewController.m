@@ -13,7 +13,10 @@
 
 
 
-@interface FollowingTableViewController ()
+@interface FollowingTableViewController (){
+    UIRefreshControl *refreshControl;
+
+}
 
 @end
 
@@ -21,6 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    // UIRefreshController
+    refreshControl = [[UIRefreshControl alloc]init];
+    [self.tableView addSubview:refreshControl];
+    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
     
     self.navigationItem.hidesBackButton = TRUE;
     
@@ -33,12 +42,12 @@
     self.following = [NSMutableArray arrayWithCapacity:5];
     
     Following*fol = [[Following alloc] init];
-    fol.username = @"JenSelter";
+    fol.username = @"ManofSteel";
     fol.dateUploaded = @"20 min";
-    fol.videoFile = [[NSBundle mainBundle] URLForResource:@"girlworkout2" withExtension:@"gif"];
+    fol.videoFile = [[NSBundle mainBundle] URLForResource:@"trainers_1" withExtension:@"gif"];
     fol.description = @"3 sets of 10";
-    fol.profilePic = @"JenSelterProfilePic.jpg";
-    fol.usernameCom = @"JenSelter";
+    fol.profilePic = @"manprofileimage.jpg";
+    fol.usernameCom = @"ManofSteel";
     [self.following addObject:fol];
     
     fol = [[Following alloc] init];
@@ -80,21 +89,25 @@
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
-
+/*
 -(IBAction)profile:(id)sender{
     UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"UserProfile" bundle:nil];
     UIViewController *initialSettingsVC = [commentsStoryboard instantiateInitialViewController];
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
-
+*/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-
+- (void)refreshTable {
+    //TODO: refresh your data
+    [refreshControl endRefreshing];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 

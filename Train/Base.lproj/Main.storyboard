@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tDh-iv-G9Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tDh-iv-G9Z">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -32,9 +32,10 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isu-oj-ErK">
                                 <rect key="frame" x="0.0" y="481" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Share">
-                                    <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -139,7 +140,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sK8-DM-5OS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S5w-gU-DVZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="687"/>
+                        <rect key="frame" x="0.0" y="57.5" width="320" height="887"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U2-UG-mwU">
@@ -199,11 +200,11 @@
                                                 <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="26" allowsSelection="NO" rowHeight="492" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-f0-cvy">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="26" allowsSelection="NO" rowHeight="437" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-f0-cvy">
                                                 <rect key="frame" x="0.0" y="283" width="320" height="5000"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
-                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="410" id="i54-O9-YUa" customClass="ProfileCustomCell">
+                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="437" id="i54-O9-YUa" customClass="ProfileCustomCell">
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i54-O9-YUa" id="SLB-F2-uaF">
                                                             <autoresizingMask key="autoresizingMask"/>
@@ -226,15 +227,9 @@
                                                                     <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-C3-n5n">
-                                                                    <rect key="frame" x="93" y="322" width="219" height="55"/>
-                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAG-fo-ggq">
-                                                                    <rect key="frame" x="5" y="378" width="62" height="26"/>
-                                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <rect key="frame" x="5" y="396" width="62" height="26"/>
+                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                                                     <state key="normal" title="Like">
                                                                         <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,26 +239,15 @@
                                                                         <action selector="likeSelected:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="tK6-Bk-Ak7"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-aV-c16">
-                                                                    <rect key="frame" x="1" y="315" width="49" height="16"/>
-                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
-                                                                    <state key="normal" title="6 Likes">
-                                                                        <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </state>
-                                                                    <connections>
-                                                                        <action selector="likeView:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="OG7-Rb-776"/>
-                                                                    </connections>
-                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6E-0D-fp7">
-                                                                    <rect key="frame" x="5" y="339" width="254" height="21"/>
+                                                                    <rect key="frame" x="8" y="329" width="251" height="21"/>
                                                                     <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                                                     <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-d6-oRF">
-                                                                    <rect key="frame" x="80" y="378" width="62" height="26"/>
-                                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <rect key="frame" x="80" y="396" width="62" height="26"/>
+                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                                                     <state key="normal" title="Comment">
                                                                         <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -273,13 +257,36 @@
                                                                         <action selector="commentView:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="MoC-fW-br0"/>
                                                                     </connections>
                                                                 </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRS-65-VR7">
+                                                                    <rect key="frame" x="8" y="308" width="87" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-z0-we2">
+                                                                    <rect key="frame" x="4" y="304" width="83" height="30"/>
+                                                                    <state key="normal">
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="likeView:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="tGN-Hw-5Uo"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-C3-n5n">
+                                                                    <rect key="frame" x="103" y="314" width="209" height="56"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <connections>
                                                             <outlet property="dateUploadedLabel" destination="Ypi-sm-HiU" id="xX4-n6-1sZ"/>
                                                             <outlet property="descriptionLabel" destination="zrd-C3-n5n" id="eRI-fA-19c"/>
+                                                            <outlet property="likeCountLabel" destination="sRS-65-VR7" id="TKo-na-D3m"/>
                                                             <outlet property="profilePicLabel" destination="pKd-x9-HLC" id="fCp-uF-6K7"/>
+                                                            <outlet property="usernameComLabel" destination="z6E-0D-fp7" id="TMB-MZ-3QT"/>
                                                             <outlet property="usernameLabel" destination="yaJ-ht-nIJ" id="Q1o-n5-IEc"/>
                                                             <outlet property="videoFileLabel" destination="9M2-uA-E1W" id="k9E-3M-7Mf"/>
                                                         </connections>
@@ -302,6 +309,7 @@
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuG-aa-yOf">
                                                 <rect key="frame" x="16" y="243" width="288" height="30"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <state key="normal" title="Edit Profile">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -316,6 +324,24 @@
                                                 <color key="progressTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9P-dO-jFq">
+                                                <rect key="frame" x="120" y="188" width="81" height="47"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="followers:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="dWA-rw-oCw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-5Q-ZGP">
+                                                <rect key="frame" x="225" y="188" width="79" height="49.5"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="following:" destination="cGh-Yg-2PW" eventType="touchUpInside" id="3KM-2S-ASc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -341,7 +367,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="800"/>
+                    <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="scroller" destination="7U2-UG-mwU" id="ITI-j3-2yU"/>
                         <outlet property="tableView" destination="4Aa-f0-cvy" id="C8w-GI-h4q"/>
@@ -349,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQ2-Wj-qiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="2908"/>
+            <point key="canvasLocation" x="932" y="3124"/>
         </scene>
         <!--TRAINERS-->
         <scene sceneID="4Ry-EI-tac">
@@ -374,12 +400,6 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFt-DX-nM0">
                                             <rect key="frame" x="58" y="8" width="254" height="21"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-tN-I1b">
-                                            <rect key="frame" x="93" y="320" width="304" height="55"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                             <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -430,15 +450,12 @@
                                                 <action selector="commentView:" destination="pOp-au-QIO" eventType="touchUpInside" id="p3i-v0-5mn"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fn-Gx-JUz">
-                                            <rect key="frame" x="58" y="8" width="82" height="30"/>
-                                            <state key="normal">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="profile:" destination="pOp-au-QIO" eventType="touchUpInside" id="i1A-df-H6p"/>
-                                            </connections>
-                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-tN-I1b">
+                                            <rect key="frame" x="103" y="320" width="209" height="55"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -465,7 +482,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIF-05-hvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950" y="884"/>
+            <point key="canvasLocation" x="950" y="863"/>
         </scene>
         <!--TRAIN-->
         <scene sceneID="8WA-Dq-xzt">
@@ -543,9 +560,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="TRAIN" id="Msn-qX-pzk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="JAv-KC-0Ts">
-                            <color key="tintColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="JAv-KC-0Ts"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
@@ -659,7 +674,7 @@
         <scene sceneID="N49-1g-Xa7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nyz-LM-gd2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="trainers-1.png" id="ILu-cd-1N1"/>
+                    <tabBarItem key="tabBarItem" title="" image="Weightlifting.png" id="ILu-cd-1N1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="muq-wo-BfF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -678,7 +693,7 @@
         <scene sceneID="eWN-cf-y7a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nwg-Y3-ZJm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home156-2-1.png" id="JIC-7k-Vnf"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home.png" id="JIC-7k-Vnf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwx-gM-vsc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -697,7 +712,7 @@
         <scene sceneID="SX8-eW-bWF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cK1-8i-oEz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="video icon-1.png" id="i5X-B6-jQw"/>
+                    <tabBarItem key="tabBarItem" title="" image="Camera.png" id="i5X-B6-jQw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3FZ-uC-YiM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -716,7 +731,7 @@
         <scene sceneID="LVd-JZ-h8x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s97-6U-ul9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="train-1.png" id="EU0-kf-0M2"/>
+                    <tabBarItem key="tabBarItem" title="" image="Globe.png" id="EU0-kf-0M2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="14p-VE-lPu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -735,7 +750,7 @@
         <scene sceneID="8Ob-Z6-LDn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fR6-bd-b5m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="profile-1-1.png" id="FD1-v8-fV1"/>
+                    <tabBarItem key="tabBarItem" title="" image="Activities.png" id="FD1-v8-fV1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y1P-Nj-Ihi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -778,7 +793,7 @@
         <!--Featured-->
         <scene sceneID="RFy-iF-f2a">
             <objects>
-                <tableViewController title="Featured" id="SPY-Xz-8ZF" customClass="FollowingTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Featured" id="SPY-Xz-8ZF" customClass="FeaturedTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="410" sectionHeaderHeight="22" sectionFooterHeight="22" id="pN1-Xl-ha2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -798,12 +813,6 @@
                                             <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOL-O8-lJe">
-                                            <rect key="frame" x="92" y="311" width="304" height="55"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMS-f4-zpi">
                                             <rect key="frame" x="58" y="18" width="254" height="21"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
@@ -813,17 +822,6 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-dt-rgg">
                                             <rect key="frame" x="0.0" y="55" width="320" height="244"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4A-N2-Gbz">
-                                            <rect key="frame" x="1" y="307" width="49" height="16"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
-                                            <state key="normal" title="300 Likes">
-                                                <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="likeView:" destination="SPY-Xz-8ZF" eventType="touchUpInside" id="TX7-NU-bB0"/>
-                                            </connections>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-dU-nHh">
                                             <rect key="frame" x="5" y="368" width="62" height="26"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -854,21 +852,34 @@
                                                 <action selector="commentView:" destination="SPY-Xz-8ZF" eventType="touchUpInside" id="OMc-KP-P05"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9c-5B-Eq5">
-                                            <rect key="frame" x="58" y="0.0" width="79" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-H3-Ipf">
+                                            <rect key="frame" x="8" y="307" width="68" height="21"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrH-OO-RYB">
+                                            <rect key="frame" x="5" y="298" width="46" height="30"/>
                                             <state key="normal">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <action selector="profile:" destination="SPY-Xz-8ZF" eventType="touchUpInside" id="SNk-Oe-e2W"/>
+                                                <action selector="likeView:" destination="SPY-Xz-8ZF" eventType="touchUpInside" id="aT2-4Q-TiU"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOL-O8-lJe">
+                                            <rect key="frame" x="102" y="311" width="210" height="55"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dateUploadedLabel" destination="dMS-f4-zpi" id="8xW-OL-GTd"/>
                                     <outlet property="descriptionLabel" destination="cOL-O8-lJe" id="q7J-Ds-5sH"/>
+                                    <outlet property="likeCountLabel" destination="RkG-H3-Ipf" id="YCZ-mS-AEz"/>
                                     <outlet property="profilePicLabel" destination="1lE-oC-ipy" id="69o-Mp-nmd"/>
                                     <outlet property="usernameComLabel" destination="hhg-2r-z3a" id="HSJ-2u-3LN"/>
                                     <outlet property="usernameLabel" destination="758-IU-RPt" id="co8-TZ-UNJ"/>
@@ -969,7 +980,7 @@
         <!--Recent-->
         <scene sceneID="J9T-08-OhD">
             <objects>
-                <tableViewController title="Recent" id="lIH-bB-GU6" customClass="FollowingTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Recent" id="lIH-bB-GU6" customClass="RecentTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="410" sectionHeaderHeight="22" sectionFooterHeight="22" id="6tK-xH-2RN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1004,17 +1015,6 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4R-99-bJa">
                                             <rect key="frame" x="0.0" y="55" width="320" height="244"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12a-xt-s6A">
-                                            <rect key="frame" x="1" y="307" width="62" height="16"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
-                                            <state key="normal" title="6 Likes">
-                                                <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="likeView:" destination="lIH-bB-GU6" eventType="touchUpInside" id="CaW-7p-QWi"/>
-                                            </connections>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG0-aw-YH6">
                                             <rect key="frame" x="5" y="371" width="62" height="26"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1042,12 +1042,19 @@
                                                 <action selector="commentView:" destination="lIH-bB-GU6" eventType="touchUpInside" id="ngO-FQ-qVl"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-Z3-aVz">
+                                            <rect key="frame" x="9" y="299" width="68" height="21"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                            <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dateUploadedLabel" destination="T9k-cE-BPg" id="dH9-1T-oKY"/>
                                     <outlet property="descriptionLabel" destination="LYJ-xV-DH7" id="rO1-fa-Nzb"/>
+                                    <outlet property="likeCountLabel" destination="g9x-Z3-aVz" id="Ljq-Wn-DnR"/>
                                     <outlet property="profilePicLabel" destination="4ga-gG-yR6" id="eaW-Y5-Ebg"/>
                                     <outlet property="usernameComLabel" destination="bDB-Re-8th" id="lwW-iG-dBb"/>
                                     <outlet property="usernameLabel" destination="bJd-uD-Ojx" id="lCa-z0-Blj"/>
@@ -1066,14 +1073,240 @@
             </objects>
             <point key="canvasLocation" x="1788" y="884"/>
         </scene>
+        <!--PROFILE-->
+        <scene sceneID="aoR-LV-a3Z">
+            <objects>
+                <viewController id="BJb-eE-2re" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MCW-DA-huE"/>
+                        <viewControllerLayoutGuide type="bottom" id="agT-If-mmI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PNJ-YN-ZHa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KO-uD-MSh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-9c-PHq">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NeeProfilePic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-t3-MlV">
+                                                <rect key="frame" x="120" y="8" width="81" height="81"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maa-JF-XbO">
+                                                <rect key="frame" x="114" y="212" width="89" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Following" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbm-4a-0CX">
+                                                <rect key="frame" x="234" y="212" width="77" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6r-dQ-GTW">
+                                                <rect key="frame" x="138" y="191" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB5-jT-0Eh">
+                                                <rect key="frame" x="241" y="195" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neegbeah Reeves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTa-3w-M1D">
+                                                <rect key="frame" x="17" y="97" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAReeves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-JC-JWn">
+                                                <rect key="frame" x="0.0" y="113" width="320" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NC A&amp;T SU. Half-Marathon/Marathon Runner🏃 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3W-bc-cte">
+                                                <rect key="frame" x="16" y="131" width="288" height="52"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTa-3S-mrg">
+                                                <rect key="frame" x="10" y="212" width="64" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-Gk-VHI">
+                                                <rect key="frame" x="16" y="241" width="288" height="30"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Follow">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="124" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLm-DQ-vbS">
+                                                <rect key="frame" x="21" y="191" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="26" allowsSelection="NO" rowHeight="492" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Q7H-QU-qsR">
+                                                <rect key="frame" x="0.0" y="283" width="320" height="5000"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="410" id="UfU-7R-7zr" customClass="ProfileCustomCell">
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UfU-7R-7zr" id="nll-4i-tRv">
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grX-dc-aTC">
+                                                                    <rect key="frame" x="0.0" y="62" width="320" height="244"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAJ-iK-q3Q">
+                                                                    <rect key="frame" x="8" y="8" width="42" height="47"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-69-5fI">
+                                                                    <rect key="frame" x="58" y="8" width="254" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5d-Be-eNj">
+                                                                    <rect key="frame" x="58" y="26" width="254" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-I2-eE5">
+                                                                    <rect key="frame" x="89" y="314" width="304" height="55"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="196-tx-FQz">
+                                                                    <rect key="frame" x="5" y="375" width="62" height="26"/>
+                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                                    <state key="normal" title="Like">
+                                                                        <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="likeSelected:" destination="BJb-eE-2re" eventType="touchUpInside" id="XNj-3u-IZ6"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4l-iT-JJN">
+                                                                    <rect key="frame" x="82" y="375" width="62" height="26"/>
+                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                                    <state key="normal" title="Comment">
+                                                                        <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="commentView:" destination="BJb-eE-2re" eventType="touchUpInside" id="pAk-Mx-cR4"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNo-Hy-ipw">
+                                                                    <rect key="frame" x="8" y="310" width="42" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mow-U2-878">
+                                                                    <rect key="frame" x="4" y="306" width="46" height="30"/>
+                                                                    <state key="normal">
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="likeView:" destination="BJb-eE-2re" eventType="touchDragInside" id="x9g-uz-oj4"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0G-mX-6Pv">
+                                                                    <rect key="frame" x="8" y="331" width="94" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
+                                                                    <color key="textColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <outlet property="dateUploadedLabel" destination="v5d-Be-eNj" id="Rgd-nn-kBH"/>
+                                                            <outlet property="descriptionLabel" destination="7Nk-I2-eE5" id="hDL-cv-fP3"/>
+                                                            <outlet property="likeCountLabel" destination="FNo-Hy-ipw" id="fqC-Sn-6jF"/>
+                                                            <outlet property="profilePicLabel" destination="uAJ-iK-q3Q" id="4ME-EV-dKv"/>
+                                                            <outlet property="usernameComLabel" destination="H0G-mX-6Pv" id="e99-sS-fVE"/>
+                                                            <outlet property="usernameLabel" destination="Hax-69-5fI" id="c6W-CB-Q4w"/>
+                                                            <outlet property="videoFileLabel" destination="grX-dc-aTC" id="at0-Wj-BGU"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BJb-eE-2re" id="QN0-LC-D0K"/>
+                                                    <outlet property="delegate" destination="BJb-eE-2re" id="kVr-9q-XPx"/>
+                                                </connections>
+                                            </tableView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-Fg-dgX">
+                                                <rect key="frame" x="0.0" y="283" width="320" height="2"/>
+                                                <color key="progressTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </progressView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J4r-y8-Rbp">
+                                                <rect key="frame" x="1" y="181" width="320" height="2"/>
+                                                <color key="progressTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="I9I-su-csh"/>
+                                            <constraint firstAttribute="height" constant="1500" id="Ll0-Sq-f1a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="PROFILE" id="3eq-AP-XYc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Uq2-q6-eVh">
+                            <color key="tintColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeAction:" destination="BJb-eE-2re" id="Q8U-6s-GUd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="uDX-Oe-vv1">
+                            <color key="tintColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="reportUser" destination="BJb-eE-2re" id="xfr-m7-Fpq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1000"/>
+                    <connections>
+                        <outlet property="scroller" destination="9KO-uD-MSh" id="RGA-VI-H2h"/>
+                        <outlet property="tableView" destination="Q7H-QU-qsR" id="QuN-6J-mRP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mja-4g-Gp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669" y="788"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Activities.png" width="60" height="60"/>
+        <image name="Camera.png" width="60" height="60"/>
+        <image name="Globe.png" width="60" height="60"/>
+        <image name="Home.png" width="60" height="60"/>
         <image name="NeeProfilePic.jpg" width="512" height="512"/>
-        <image name="home156-2-1.png" width="32" height="32"/>
-        <image name="profile-1-1.png" width="32" height="32"/>
-        <image name="train-1.png" width="50" height="50"/>
-        <image name="trainers-1.png" width="32" height="32"/>
-        <image name="video icon-1.png" width="32" height="32"/>
+        <image name="Weightlifting.png" width="60" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1081,7 +1314,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="90u-sz-z7O"/>
-        <segue reference="7XH-0Q-L93"/>
+        <segue reference="UNJ-Cz-WUv"/>
+        <segue reference="DcH-wV-2e2"/>
     </inferredMetricsTieBreakers>
 </document>

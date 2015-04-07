@@ -27,17 +27,19 @@
 		D14D0A691AB2985E0025B1B2 /* background-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D14D0A641AB2985E0025B1B2 /* background-736h@3x.png */; };
 		D14D0A6A1AB2985E0025B1B2 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D14D0A651AB2985E0025B1B2 /* background.png */; };
 		D14D0A6B1AB2985E0025B1B2 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D14D0A661AB2985E0025B1B2 /* background@2x.png */; };
+		D14E002E1AD43A9C000F37CD /* RecentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E002D1AD43A9C000F37CD /* RecentTableViewController.m */; };
+		D14E00311AD43CFB000F37CD /* recent_workout_gifs_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D14E002F1AD43CFB000F37CD /* recent_workout_gifs_1.gif */; };
+		D14E00321AD43CFB000F37CD /* recent_workout_gifs_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D14E00301AD43CFB000F37CD /* recent_workout_gifs_2.gif */; };
+		D14E00361AD43D56000F37CD /* FeaturedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E00351AD43D56000F37CD /* FeaturedTableViewController.m */; };
+		D14E00381AD43F28000F37CD /* featured_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D14E00371AD43F28000F37CD /* featured_2.gif */; };
+		D14E003A1AD44168000F37CD /* trainers_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D14E00391AD44168000F37CD /* trainers_1.gif */; };
+		D14E003C1AD45011000F37CD /* manprofileimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14E003B1AD45011000F37CD /* manprofileimage.jpg */; };
+		D14E00441AD45776000F37CD /* Activities.png in Resources */ = {isa = PBXBuildFile; fileRef = D14E00431AD45776000F37CD /* Activities.png */; };
+		D14E00481AD4577E000F37CD /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = D14E00451AD4577E000F37CD /* Camera.png */; };
+		D14E00491AD4577E000F37CD /* Globe.png in Resources */ = {isa = PBXBuildFile; fileRef = D14E00461AD4577E000F37CD /* Globe.png */; };
+		D14E004C1AD45785000F37CD /* Weightlifting.png in Resources */ = {isa = PBXBuildFile; fileRef = D14E004B1AD45785000F37CD /* Weightlifting.png */; };
+		D14E004E1AD458C8000F37CD /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D14E004D1AD458C8000F37CD /* Home.png */; };
 		D17B43CD1A709F9F00FF682C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B43CC1A709F9F00FF682C /* CoreAudio.framework */; };
-		D17F9ABC1AB2828A0051812A /* home156-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ABA1AB2828A0051812A /* home156-2-1.png */; };
-		D17F9ABD1AB2828A0051812A /* home156-2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ABB1AB2828A0051812A /* home156-2-2.png */; };
-		D17F9AC01AB2829A0051812A /* profile-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ABE1AB2829A0051812A /* profile-1-1.png */; };
-		D17F9AC11AB2829A0051812A /* profile-1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ABF1AB2829A0051812A /* profile-1-2.png */; };
-		D17F9AC41AB282AD0051812A /* train-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9AC21AB282AD0051812A /* train-1.png */; };
-		D17F9AC51AB282AD0051812A /* train-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9AC31AB282AD0051812A /* train-2.png */; };
-		D17F9AC81AB282BA0051812A /* trainers-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9AC61AB282BA0051812A /* trainers-1.png */; };
-		D17F9AC91AB282BA0051812A /* trainers-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9AC71AB282BA0051812A /* trainers-2.png */; };
-		D17F9ACC1AB282C50051812A /* video icon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ACA1AB282C50051812A /* video icon-1.png */; };
-		D17F9ACD1AB282C50051812A /* video icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17F9ACB1AB282C50051812A /* video icon-2.png */; };
 		D187D2B11A9FE86100307F57 /* TrainCatagoriesSeque.m in Sources */ = {isa = PBXBuildFile; fileRef = D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */; };
 		D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D187D2B21A9FEC8500307F57 /* placeholder.png */; };
 		D188582D1A8413A400CC2B56 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D188582C1A8413A400CC2B56 /* HomeViewController.m */; };
@@ -79,6 +81,7 @@
 		D19D53961A64951B00FCAE61 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53911A64951B00FCAE61 /* Parse.framework */; };
 		D19D53981A64951B00FCAE61 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53931A64951B00FCAE61 /* ParseFacebookUtils.framework */; };
 		D19D53991A64951B00FCAE61 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D53941A64951B00FCAE61 /* ParseUI.framework */; };
+		D1B260751ACDA64100CD626F /* UserSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B260741ACDA64100CD626F /* UserSegue.m */; };
 		D1CF80031AA76DF9008D6138 /* ActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CF80021AA76DF9008D6138 /* ActivityTableViewController.m */; };
 		D1CF80071AA7D279008D6138 /* JenSelterProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80051AA7D279008D6138 /* JenSelterProfilePic.jpg */; };
 		D1CF80081AA7D279008D6138 /* NeeProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF80061AA7D279008D6138 /* NeeProfilePic.jpg */; };
@@ -137,17 +140,21 @@
 		D14D0A641AB2985E0025B1B2 /* background-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-736h@3x.png"; path = "Assets/background-736h@3x.png"; sourceTree = SOURCE_ROOT; };
 		D14D0A651AB2985E0025B1B2 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Assets/background.png; sourceTree = SOURCE_ROOT; };
 		D14D0A661AB2985E0025B1B2 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "Assets/background@2x.png"; sourceTree = SOURCE_ROOT; };
+		D14E002C1AD43A9C000F37CD /* RecentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentTableViewController.h; sourceTree = "<group>"; };
+		D14E002D1AD43A9C000F37CD /* RecentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentTableViewController.m; sourceTree = "<group>"; };
+		D14E002F1AD43CFB000F37CD /* recent_workout_gifs_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = recent_workout_gifs_1.gif; sourceTree = "<group>"; };
+		D14E00301AD43CFB000F37CD /* recent_workout_gifs_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = recent_workout_gifs_2.gif; sourceTree = "<group>"; };
+		D14E00341AD43D56000F37CD /* FeaturedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedTableViewController.h; sourceTree = "<group>"; };
+		D14E00351AD43D56000F37CD /* FeaturedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedTableViewController.m; sourceTree = "<group>"; };
+		D14E00371AD43F28000F37CD /* featured_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = featured_2.gif; sourceTree = "<group>"; };
+		D14E00391AD44168000F37CD /* trainers_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = trainers_1.gif; sourceTree = "<group>"; };
+		D14E003B1AD45011000F37CD /* manprofileimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manprofileimage.jpg; sourceTree = "<group>"; };
+		D14E00431AD45776000F37CD /* Activities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Activities.png; path = "Assets/Train Icon/Activities.png"; sourceTree = SOURCE_ROOT; };
+		D14E00451AD4577E000F37CD /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = "Assets/Train Icon/Camera.png"; sourceTree = SOURCE_ROOT; };
+		D14E00461AD4577E000F37CD /* Globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Globe.png; path = "Assets/Train Icon/Globe.png"; sourceTree = SOURCE_ROOT; };
+		D14E004B1AD45785000F37CD /* Weightlifting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Weightlifting.png; path = "Assets/Train Icon/Weightlifting.png"; sourceTree = SOURCE_ROOT; };
+		D14E004D1AD458C8000F37CD /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = "Assets/Train Icon/Home.png"; sourceTree = SOURCE_ROOT; };
 		D17B43CC1A709F9F00FF682C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		D17F9ABA1AB2828A0051812A /* home156-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home156-2-1.png"; path = "Assets/Train Icon/home156-2-1.png"; sourceTree = SOURCE_ROOT; };
-		D17F9ABB1AB2828A0051812A /* home156-2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home156-2-2.png"; path = "Assets/Train Icon/home156-2-2.png"; sourceTree = SOURCE_ROOT; };
-		D17F9ABE1AB2829A0051812A /* profile-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-1-1.png"; path = "Assets/Train Icon/profile-1-1.png"; sourceTree = SOURCE_ROOT; };
-		D17F9ABF1AB2829A0051812A /* profile-1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-1-2.png"; path = "Assets/Train Icon/profile-1-2.png"; sourceTree = SOURCE_ROOT; };
-		D17F9AC21AB282AD0051812A /* train-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "train-1.png"; path = "Assets/Train Icon/train-1.png"; sourceTree = SOURCE_ROOT; };
-		D17F9AC31AB282AD0051812A /* train-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "train-2.png"; path = "Assets/Train Icon/train-2.png"; sourceTree = SOURCE_ROOT; };
-		D17F9AC61AB282BA0051812A /* trainers-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trainers-1.png"; path = "Assets/Train Icon/trainers-1.png"; sourceTree = SOURCE_ROOT; };
-		D17F9AC71AB282BA0051812A /* trainers-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trainers-2.png"; path = "Assets/Train Icon/trainers-2.png"; sourceTree = SOURCE_ROOT; };
-		D17F9ACA1AB282C50051812A /* video icon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video icon-1.png"; path = "Assets/Train Icon/video icon-1.png"; sourceTree = SOURCE_ROOT; };
-		D17F9ACB1AB282C50051812A /* video icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video icon-2.png"; path = "Assets/Train Icon/video icon-2.png"; sourceTree = SOURCE_ROOT; };
 		D187D2AF1A9FE86000307F57 /* TrainCatagoriesSeque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainCatagoriesSeque.h; sourceTree = "<group>"; };
 		D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainCatagoriesSeque.m; sourceTree = "<group>"; };
 		D187D2B21A9FEC8500307F57 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Assets/placeholder.png; sourceTree = SOURCE_ROOT; };
@@ -198,6 +205,8 @@
 		D19D53911A64951B00FCAE61 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D19D53931A64951B00FCAE61 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		D19D53941A64951B00FCAE61 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D1B260731ACDA64100CD626F /* UserSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSegue.h; sourceTree = "<group>"; };
+		D1B260741ACDA64100CD626F /* UserSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSegue.m; sourceTree = "<group>"; };
 		D1CF80011AA76DF9008D6138 /* ActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewController.h; sourceTree = "<group>"; };
 		D1CF80021AA76DF9008D6138 /* ActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewController.m; sourceTree = "<group>"; };
 		D1CF80051AA7D279008D6138 /* JenSelterProfilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JenSelterProfilePic.jpg; sourceTree = "<group>"; };
@@ -295,6 +304,8 @@
 		D13754A71A5DA372001D0E9E /* Train */ = {
 			isa = PBXGroup;
 			children = (
+				D14E00331AD43D3E000F37CD /* Featured */,
+				D14E002B1AD43A5B000F37CD /* Recent */,
 				D197D5E61ABCCB8E00149420 /* UserProfile */,
 				D1E13A901AB2751400A3A951 /* Profile */,
 				D1E13A831AB1489800A3A951 /* Search */,
@@ -311,6 +322,8 @@
 				D13754B51A5DA373001D0E9E /* Main.storyboard */,
 				D187D2AF1A9FE86000307F57 /* TrainCatagoriesSeque.h */,
 				D187D2B01A9FE86100307F57 /* TrainCatagoriesSeque.m */,
+				D1B260731ACDA64100CD626F /* UserSegue.h */,
+				D1B260741ACDA64100CD626F /* UserSegue.m */,
 				D13754B81A5DA373001D0E9E /* Images.xcassets */,
 				D13754AF1A5DA373001D0E9E /* Train.xcdatamodeld */,
 				D13754A81A5DA372001D0E9E /* Supporting Files */,
@@ -351,6 +364,24 @@
 				D13754C61A5DA373001D0E9E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D14E002B1AD43A5B000F37CD /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+				D14E002C1AD43A9C000F37CD /* RecentTableViewController.h */,
+				D14E002D1AD43A9C000F37CD /* RecentTableViewController.m */,
+			);
+			name = Recent;
+			sourceTree = "<group>";
+		};
+		D14E00331AD43D3E000F37CD /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				D14E00341AD43D56000F37CD /* FeaturedTableViewController.h */,
+				D14E00351AD43D56000F37CD /* FeaturedTableViewController.m */,
+			);
+			name = Featured;
 			sourceTree = "<group>";
 		};
 		D18858291A8412B400CC2B56 /* Login/Signup */ = {
@@ -439,6 +470,7 @@
 		D1CF80041AA7D279008D6138 /* DummyPic */ = {
 			isa = PBXGroup;
 			children = (
+				D14E003B1AD45011000F37CD /* manprofileimage.jpg */,
 				D1CF80051AA7D279008D6138 /* JenSelterProfilePic.jpg */,
 				D1CF80061AA7D279008D6138 /* NeeProfilePic.jpg */,
 			);
@@ -503,6 +535,10 @@
 		D1E13A751AB140E200A3A951 /* DummyVideo */ = {
 			isa = PBXGroup;
 			children = (
+				D14E00391AD44168000F37CD /* trainers_1.gif */,
+				D14E00371AD43F28000F37CD /* featured_2.gif */,
+				D14E002F1AD43CFB000F37CD /* recent_workout_gifs_1.gif */,
+				D14E00301AD43CFB000F37CD /* recent_workout_gifs_2.gif */,
 				D19C1D961AC240BF00917160 /* guyworkout.gif */,
 				D19C1D921AC23EFE00917160 /* girlworkout.gif */,
 				D19C1D931AC23EFE00917160 /* girlworkout2.gif */,
@@ -544,17 +580,12 @@
 		D1EA98B01A967FD1005B0FB3 /* Train Icon */ = {
 			isa = PBXGroup;
 			children = (
+				D14E004D1AD458C8000F37CD /* Home.png */,
+				D14E00451AD4577E000F37CD /* Camera.png */,
+				D14E00461AD4577E000F37CD /* Globe.png */,
+				D14E00431AD45776000F37CD /* Activities.png */,
+				D14E004B1AD45785000F37CD /* Weightlifting.png */,
 				D19C1D8B1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif */,
-				D17F9ACA1AB282C50051812A /* video icon-1.png */,
-				D17F9ACB1AB282C50051812A /* video icon-2.png */,
-				D17F9AC61AB282BA0051812A /* trainers-1.png */,
-				D17F9AC71AB282BA0051812A /* trainers-2.png */,
-				D17F9AC21AB282AD0051812A /* train-1.png */,
-				D17F9AC31AB282AD0051812A /* train-2.png */,
-				D17F9ABE1AB2829A0051812A /* profile-1-1.png */,
-				D17F9ABF1AB2829A0051812A /* profile-1-2.png */,
-				D17F9ABA1AB2828A0051812A /* home156-2-1.png */,
-				D17F9ABB1AB2828A0051812A /* home156-2-2.png */,
 			);
 			path = "Train Icon";
 			sourceTree = "<group>";
@@ -648,41 +679,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D17F9AC91AB282BA0051812A /* trainers-2.png in Resources */,
 				D197D5EA1ABCCDDB00149420 /* EditProfile.storyboard in Resources */,
 				D14535391AB2845900EB0B80 /* Leg workout.png in Resources */,
+				D14E003A1AD44168000F37CD /* trainers_1.gif in Resources */,
+				D14E004C1AD45785000F37CD /* Weightlifting.png in Resources */,
 				D14D0A6B1AB2985E0025B1B2 /* background@2x.png in Resources */,
-				D17F9AC51AB282AD0051812A /* train-2.png in Resources */,
 				D13754B71A5DA373001D0E9E /* Main.storyboard in Resources */,
-				D17F9AC01AB2829A0051812A /* profile-1-1.png in Resources */,
 				D145353A1AB2845900EB0B80 /* Shoulder workout.png in Resources */,
+				D14E00481AD4577E000F37CD /* Camera.png in Resources */,
+				D14E00381AD43F28000F37CD /* featured_2.gif in Resources */,
+				D14E00311AD43CFB000F37CD /* recent_workout_gifs_1.gif in Resources */,
 				D1CF802C1AA8BB52008D6138 /* Comments.storyboard in Resources */,
 				D14535331AB2845100EB0B80 /* arm_workout.png in Resources */,
 				D14D0A681AB2985E0025B1B2 /* background-667h@2x.png in Resources */,
 				D1CF80071AA7D279008D6138 /* JenSelterProfilePic.jpg in Resources */,
+				D14E003C1AD45011000F37CD /* manprofileimage.jpg in Resources */,
 				D19C1D951AC23EFE00917160 /* girlworkout2.gif in Resources */,
 				D187D2B31A9FEC8500307F57 /* placeholder.png in Resources */,
-				D17F9AC11AB2829A0051812A /* profile-1-2.png in Resources */,
 				D13754B91A5DA373001D0E9E /* Images.xcassets in Resources */,
+				D14E00441AD45776000F37CD /* Activities.png in Resources */,
 				D14D0A691AB2985E0025B1B2 /* background-736h@3x.png in Resources */,
-				D17F9ABD1AB2828A0051812A /* home156-2-2.png in Resources */,
+				D14E00321AD43CFB000F37CD /* recent_workout_gifs_2.gif in Resources */,
 				D14535341AB2845100EB0B80 /* back workout.png in Resources */,
 				D14D0A6A1AB2985E0025B1B2 /* background.png in Resources */,
 				D19C1D971AC240BF00917160 /* guyworkout.gif in Resources */,
 				D197D5E81ABCCBA900149420 /* UserProfile.storyboard in Resources */,
 				D19C1D8C1AC11D3100917160 /* celebrity-gifs-brad-pitt-workout.gif in Resources */,
+				D14E00491AD4577E000F37CD /* Globe.png in Resources */,
+				D14E004E1AD458C8000F37CD /* Home.png in Resources */,
 				D1CF80081AA7D279008D6138 /* NeeProfilePic.jpg in Resources */,
 				D14535351AB2845100EB0B80 /* Chest workout.png in Resources */,
-				D17F9AC81AB282BA0051812A /* trainers-1.png in Resources */,
-				D17F9ACC1AB282C50051812A /* video icon-1.png in Resources */,
 				D14535361AB2845100EB0B80 /* core workout.png in Resources */,
 				D14D0A671AB2985E0025B1B2 /* background-568h@2x.png in Resources */,
 				D1E13A851AB148A900A3A951 /* Search.storyboard in Resources */,
 				D1CF801D1AA7EC93008D6138 /* Likes.storyboard in Resources */,
-				D17F9ACD1AB282C50051812A /* video icon-2.png in Resources */,
 				D19C1D941AC23EFE00917160 /* girlworkout.gif in Resources */,
-				D17F9ABC1AB2828A0051812A /* home156-2-1.png in Resources */,
-				D17F9AC41AB282AD0051812A /* train-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,11 +740,13 @@
 				D197D5ED1ABCF07200149420 /* HomeData.m in Sources */,
 				D19D53701A63383200FCAE61 /* RecordingViewController.m in Sources */,
 				D197D61F1ABD214300149420 /* EditProfileViewController.m in Sources */,
+				D14E00361AD43D56000F37CD /* FeaturedTableViewController.m in Sources */,
 				D1CF800E1AA7D5FD008D6138 /* ActivityCustomCell.m in Sources */,
 				D1CF802A1AA8BB3A008D6138 /* Comments.m in Sources */,
 				D13754AE1A5DA373001D0E9E /* AppDelegate.m in Sources */,
 				D197D61B1ABD0BE000149420 /* SDCEmbeddedSegmentSegue.m in Sources */,
 				D1CF802F1AA8BCBF008D6138 /* CommentsCustomCell.m in Sources */,
+				D1B260751ACDA64100CD626F /* UserSegue.m in Sources */,
 				D1D4C1DB1A77E10300AA9574 /* Following.m in Sources */,
 				D1CF80031AA76DF9008D6138 /* ActivityTableViewController.m in Sources */,
 				D1D1C2091A968E8D00C3FB2C /* Activity.m in Sources */,
@@ -724,6 +757,7 @@
 				D145353D1AB2854800EB0B80 /* Profile.m in Sources */,
 				D19C1D8F1AC238B400917160 /* UIImage+animatedGIF.m in Sources */,
 				D197D5F01ABCF0AB00149420 /* HomeCustomCell.m in Sources */,
+				D14E002E1AD43A9C000F37CD /* RecentTableViewController.m in Sources */,
 				D1CF80261AA8B459008D6138 /* LikesTableViewController.m in Sources */,
 				D188582D1A8413A400CC2B56 /* HomeViewController.m in Sources */,
 				D13754B11A5DA373001D0E9E /* Train.xcdatamodeld in Sources */,

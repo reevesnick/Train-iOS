@@ -16,6 +16,8 @@
 @property (weak,nonatomic)IBOutlet UIImageView *videoFileLabel;
 @property (weak,nonatomic)IBOutlet UILabel *descriptionLabel;
 @property (weak,nonatomic)IBOutlet UILabel *usernameComLabel;
+@property (weak,nonatomic)IBOutlet UILabel *likeCountLabel;
+
 
 
 @end

@@ -17,6 +17,7 @@
 @synthesize profilePic;
 @synthesize usernameCom;
 @synthesize web;
+@synthesize likeCount;
 
 //@synthesize likeCount;
 

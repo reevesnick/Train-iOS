@@ -18,6 +18,7 @@
 @property (strong,nonatomic)NSString *description;
 @property (strong,nonatomic)NSString *usernameCom;
 @property (strong,nonatomic)NSString *web;
+@property (strong,nonatomic)NSString *likeCount;
 
 
 
