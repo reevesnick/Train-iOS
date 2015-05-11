@@ -62,7 +62,10 @@
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor yellowColor]];
 
 
-
+    //Remove Back Button Label
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -50.f) forBarMetrics:UIBarMetricsDefault];
+    
+    
     
     return YES;
 }
