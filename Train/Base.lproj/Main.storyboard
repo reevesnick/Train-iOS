@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tDh-iv-G9Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tDh-iv-G9Z">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
@@ -334,7 +334,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-5Q-ZGP">
-                                                <rect key="frame" x="225" y="188" width="79" height="49.5"/>
+                                                <rect key="frame" x="225" y="188" width="79" height="50"/>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -497,7 +497,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAL-Z5-cZn">
-                                <rect key="frame" x="116" y="238" width="83" height="30"/>
+                                <rect key="frame" x="119" y="219" width="83" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <state key="normal" title="CHEST">
                                     <color key="titleColor" red="0.95467907669015162" green="0.95686274510000002" blue="0.13641791892843974" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,7 +507,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-PG-wN9">
-                                <rect key="frame" x="123" y="310" width="74" height="30"/>
+                                <rect key="frame" x="123" y="289" width="74" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <state key="normal" title="ARMS">
                                     <color key="titleColor" red="0.95467907669015162" green="0.95686274510000002" blue="0.13641791892843974" alpha="1" colorSpace="calibratedRGB"/>
@@ -517,7 +517,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZF-PO-BEb">
-                                <rect key="frame" x="119" y="160" width="83" height="30"/>
+                                <rect key="frame" x="119" y="156" width="83" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="0.95467907669015162" green="0.95686274510000002" blue="0.13641791892843974" alpha="1" colorSpace="calibratedRGB"/>
@@ -527,7 +527,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j00-ka-WIP">
-                                <rect key="frame" x="123" y="379" width="79" height="30"/>
+                                <rect key="frame" x="123" y="354" width="79" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <state key="normal" title="CORE">
                                     <color key="titleColor" red="0.95467907669015162" green="0.95686274510000002" blue="0.13641791892843974" alpha="1" colorSpace="calibratedRGB"/>
@@ -537,7 +537,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-72-pOP">
-                                <rect key="frame" x="131" y="454" width="66" height="30"/>
+                                <rect key="frame" x="127" y="412" width="66" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <state key="normal" title="LEGS">
                                     <color key="titleColor" red="0.95467907669015162" green="0.95686274510000002" blue="0.13641791892843974" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,6 +554,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="ZHF-Iu-ZdT" kind="push" id="viF-p0-kZ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-T1-ydh">
+                                <rect key="frame" x="110" y="471" width="101" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="AGILITY">
+                                    <color key="titleColor" red="0.95467907669999996" green="0.95686274510000002" blue="0.13641791889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZHF-Iu-ZdT" kind="push" id="OPe-RG-wGz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1315,6 +1326,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="UNJ-Cz-WUv"/>
-        <segue reference="DcH-wV-2e2"/>
+        <segue reference="90u-sz-z7O"/>
     </inferredMetricsTieBreakers>
 </document>

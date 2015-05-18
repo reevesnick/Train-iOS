@@ -89,6 +89,8 @@
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
+
+ 
 /*
 -(IBAction)profile:(id)sender{
     UIStoryboard *commentsStoryboard = [UIStoryboard storyboardWithName:@"UserProfile" bundle:nil];
