@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B88B3EE197C43FA42D93723B80DB2748C627FE96",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D1F5D51F31D3E82491829D69AAA08793F5C10392" : 0,
+    "B88B3EE197C43FA42D93723B80DB2748C627FE96" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AFCB94D6-3E77-4E54-9505-7FA9FACD2BB4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D1F5D51F31D3E82491829D69AAA08793F5C10392" : "SDCSegmentedViewController\/",
+    "B88B3EE197C43FA42D93723B80DB2748C627FE96" : "Train\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Train",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Train.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/reevesnick\/Train-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B88B3EE197C43FA42D93723B80DB2748C627FE96"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sberrevoets\/SDCSegmentedViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1F5D51F31D3E82491829D69AAA08793F5C10392"
+    }
+  ]
+}
